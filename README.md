@@ -127,33 +127,6 @@ create it. Then click **Use** on the skin (or set it as your default under
 **Preferences**). Site skins apply only while you're logged in; re-paste the CSS
 after any update.
 
-## Build from source
-
-`palette.json` is the only thing you edit. Everything in `ports/` and `themes/`
-is generated.
-
-```sh
-npm run build      # regenerate every port from palette.json
-npm run contrast   # assert WCAG contrast on the base
-npm test           # invariants for the color math and ports
-npm run check      # all three
-```
-
-## Repository layout
-
-```
-palette.json              single source of truth (OKLCH-derived hex)
-scripts/
-  generate.mjs            palette.json -> every port
-  contrast.mjs            WCAG accessibility gate
-  lib/                    color math + role resolution
-  ports/                  one role-map module per app
-assets/circles/           swatch images for this README
-ports/                    generated theme files, one folder per app
-themes/                   Zed-extension theme files (Fadetouched, dark)
-extension.toml            Zed extension manifest
-```
-
 ## License
 
 [MIT](LICENSE). © Arishawke.
