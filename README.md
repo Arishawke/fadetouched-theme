@@ -156,4 +156,4 @@ extension.toml            Zed extension manifest
 
 ## License
 
-[MIT](LICENSE) © Arishawke
+[MIT](LICENSE). © Arishawke.

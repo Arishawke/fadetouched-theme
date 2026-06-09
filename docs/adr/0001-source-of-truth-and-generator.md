@@ -34,6 +34,6 @@ re-deriving from OKLCH, so colors are bit-exact.
   lifted in OKLCH by `L × 1.07`, `C × 1.06`. This reproduces the original
   hand-tuned brights to within ≤ 2/255 per channel (sub-perceptual). We keep the
   documented formula rather than pinning the original hex, so brights stay
-  consistent if an accent changes. See [CHANGELOG](../../CHANGELOG.md).
+  consistent if an accent changes.
 - Zero runtime dependencies (Node built-ins only), so there is no supply chain to
   scan and the build is reproducible.
