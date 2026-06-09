@@ -1,0 +1,53 @@
+{
+  "manifest_version": 2,
+  "name": "Fadetouched",
+  "version": "2.0.0",
+  "description": "A dark teal-green, earthy color theme. Authored in OKLCH.",
+  "author": "Arishawke",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{b91c3ce8-5abe-4038-9e00-90d8aa964fb1}"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#091816",
+      "frame_inactive": "#03100f",
+      "toolbar": "#11201e",
+      "toolbar_text": "#dee1df",
+      "bookmark_text": "#dee1df",
+      "tab_background_text": "#979d98",
+      "tab_text": "#dee1df",
+      "tab_selected": "#11201e",
+      "tab_line": "#7daacf",
+      "tab_loading": "#7daacf",
+      "toolbar_field": "#1f2d29",
+      "toolbar_field_text": "#dee1df",
+      "toolbar_field_border": "#3e4945",
+      "toolbar_field_focus": "#2e3a36",
+      "toolbar_field_border_focus": "#7daacf",
+      "toolbar_field_highlight": "#3e4945",
+      "toolbar_field_highlight_text": "#dee1df",
+      "icons": "#979d98",
+      "icons_attention": "#dbb5c1",
+      "button_background_hover": "#2e3a36",
+      "button_background_active": "#3e4945",
+      "popup": "#1f2d29",
+      "popup_text": "#dee1df",
+      "popup_border": "#3e4945",
+      "popup_highlight": "#3e4945",
+      "popup_highlight_text": "#dee1df",
+      "sidebar": "#091816",
+      "sidebar_text": "#dee1df",
+      "sidebar_border": "#3e4945",
+      "sidebar_highlight": "#3e4945",
+      "sidebar_highlight_text": "#dee1df",
+      "ntp_background": "#11201e",
+      "ntp_card_background": "#1f2d29",
+      "ntp_text": "#dee1df"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  }
+}

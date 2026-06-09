@@ -1,0 +1,36 @@
+{
+  "name": "fadetouched",
+  "version": "1.0.0",
+  "description": "A dark teal-green, earthy color theme authored in OKLCH.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "Arishawke",
+  "homepage": "https://github.com/Arishawke/fadetouched-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arishawke/fadetouched-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Arishawke/fadetouched-theme/issues"
+  },
+  "keywords": [
+    "color-scheme",
+    "theme",
+    "oklch",
+    "dark-theme",
+    "zed",
+    "vscode",
+    "base16"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/generate.mjs",
+    "contrast": "node scripts/contrast.mjs",
+    "test": "node --test",
+    "check": "npm run build && npm run contrast && npm test",
+    "pack:firefox": "node scripts/pack-firefox.mjs"
+  }
+}

@@ -1,0 +1,74 @@
+/* Fadetouched. Generated from palette.json. Do not edit by hand. */
+:root {
+  --ft-n0:#03100f;
+  --ft-n1:#091816;
+  --ft-n2:#11201e;
+  --ft-n3:#1f2d29;
+  --ft-n4:#2e3a36;
+  --ft-n5:#3e4945;
+  --ft-n6:#505a56;
+  --ft-n7:#666f6b;
+  --ft-n8:#7e8580;
+  --ft-n9:#979d98;
+  --ft-n10:#b3b7b4;
+  --ft-n11:#dee1df;
+
+  --ft-red:#c87a75;
+  --ft-rust:#bc836c;
+  --ft-orange:#d7a176;
+  --ft-yellow:#d7be86;
+  --ft-green:#96bb93;
+  --ft-teal:#81b8a8;
+  --ft-cyan:#99c9c9;
+  --ft-blue:#7daacf;
+  --ft-indigo:#7d89bb;
+  --ft-purple:#af90c3;
+  --ft-magenta:#c593af;
+  --ft-pink:#dbb5c1;
+
+  --ft-bg:var(--ft-n2);
+  --ft-bg-dim:var(--ft-n1);
+  --ft-bg-sunken:var(--ft-n0);
+  --ft-surface:var(--ft-n3);
+  --ft-surface-hover:var(--ft-n4);
+  --ft-surface-active:var(--ft-n5);
+  --ft-border:var(--ft-n5);
+  --ft-border-strong:var(--ft-n6);
+  --ft-popover:var(--ft-n3);
+  --ft-text:var(--ft-n11);
+  --ft-text-muted:var(--ft-n10);
+  --ft-text-subtle:var(--ft-n9);
+  --ft-text-faint:var(--ft-n7);
+  --ft-error:var(--ft-red);
+  --ft-warning:var(--ft-yellow);
+  --ft-success:var(--ft-green);
+  --ft-info:var(--ft-teal);
+  --ft-hint:var(--ft-cyan);
+  --ft-accent:var(--ft-green);
+  --ft-link:var(--ft-blue);
+  --ft-link-visited:var(--ft-purple);
+  --ft-link-hover:var(--ft-cyan);
+  --ft-cursor:var(--ft-pink);
+
+  --ft-selection:#505a5640;
+  --ft-line-highlight:#dee1df0f;
+  --ft-match:#81b8a84d;
+  --ft-glass:#1f2d29b8;
+  --ft-glass-edge:#dee1df29;
+
+  --ft-syn-keyword:var(--ft-purple);
+  --ft-syn-string:var(--ft-green);
+  --ft-syn-number:var(--ft-orange);
+  --ft-syn-function:var(--ft-blue);
+  --ft-syn-type:var(--ft-yellow);
+  --ft-syn-builtin:var(--ft-red);
+  --ft-syn-parameter:var(--ft-rust);
+  --ft-syn-property:var(--ft-blue);
+  --ft-syn-tag:var(--ft-teal);
+  --ft-syn-attribute:var(--ft-yellow);
+  --ft-syn-escape:var(--ft-magenta);
+  --ft-syn-decorator:var(--ft-indigo);
+  --ft-syn-operator:var(--ft-cyan);
+  --ft-syn-comment:var(--ft-text-faint);
+  --ft-syn-punctuation:var(--ft-text-subtle);
+}

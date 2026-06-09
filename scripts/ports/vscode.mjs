@@ -1,0 +1,250 @@
+import { alpha } from "../lib/color.mjs";
+
+export const label = "VS Code";
+
+export default function render(ctx) {
+  const { meta, n, accent, sem, syn, ansi } = ctx;
+
+  const colors = {
+    focusBorder: sem["border-strong"],
+    foreground: sem.text,
+    "selection.background": alpha(sem["border-strong"], 30),
+    errorForeground: sem.error,
+    "widget.border": sem.border,
+    "icon.foreground": sem["text-subtle"],
+
+    "editor.background": sem.bg,
+    "editor.foreground": sem.text,
+    "editorLineNumber.foreground": sem["text-faint"],
+    "editorLineNumber.activeForeground": accent.indigo,
+    "editor.lineHighlightBackground": alpha(sem.text, 5),
+    "editor.selectionBackground": alpha(sem["border-strong"], 30),
+    "editor.selectionHighlightBackground": alpha(sem.info, 18),
+    "editor.wordHighlightBackground": alpha(sem.info, 18),
+    "editor.findMatchBackground": alpha(sem.info, 30),
+    "editor.findMatchHighlightBackground": alpha(sem.info, 18),
+    "editorCursor.foreground": sem.cursor,
+    "editorWhitespace.foreground": alpha(sem.text, 6),
+    "editorIndentGuide.background1": alpha(sem.text, 6),
+    "editorIndentGuide.activeBackground1": sem.border,
+    "editorBracketMatch.background": alpha(sem.info, 18),
+    "editorBracketMatch.border": sem.border,
+
+    "editorError.foreground": sem.error,
+    "editorWarning.foreground": sem.warning,
+    "editorInfo.foreground": sem.info,
+    "editorHint.foreground": sem.hint,
+    "editorGutter.modifiedBackground": sem.link,
+    "editorGutter.addedBackground": sem.success,
+    "editorGutter.deletedBackground": sem.error,
+
+    "editorWidget.background": sem.popover,
+    "editorWidget.border": sem.border,
+    "editorSuggestWidget.background": sem.popover,
+    "editorSuggestWidget.selectedBackground": sem["surface-active"],
+    "editorHoverWidget.background": sem.popover,
+    "editorHoverWidget.border": sem.border,
+
+    "input.background": sem.surface,
+    "input.border": sem.border,
+    "input.foreground": sem.text,
+    "input.placeholderForeground": sem["text-faint"],
+    "dropdown.background": sem.surface,
+    "dropdown.border": sem.border,
+    "dropdown.foreground": sem.text,
+
+    "badge.background": sem.accent,
+    "badge.foreground": sem.bg,
+    "button.background": sem.accent,
+    "button.foreground": sem.bg,
+    "button.hoverBackground": ansi.brightGreen,
+    "progressBar.background": sem.accent,
+
+    "activityBar.background": sem["bg-dim"],
+    "activityBar.foreground": sem.text,
+    "activityBar.inactiveForeground": sem["text-faint"],
+    "activityBar.border": sem.border,
+    "activityBarBadge.background": sem.accent,
+    "activityBarBadge.foreground": sem.bg,
+
+    "sideBar.background": sem["bg-dim"],
+    "sideBar.foreground": sem["text-muted"],
+    "sideBar.border": sem.border,
+    "sideBarSectionHeader.background": sem["bg-dim"],
+    "sideBarSectionHeader.foreground": sem.text,
+    "sideBarTitle.foreground": sem["text-subtle"],
+
+    "list.hoverBackground": sem["surface-hover"],
+    "list.activeSelectionBackground": sem["surface-active"],
+    "list.activeSelectionForeground": sem.text,
+    "list.inactiveSelectionBackground": sem.surface,
+    "list.highlightForeground": sem.link,
+    "list.focusBackground": sem["surface-active"],
+
+    "statusBar.background": sem["bg-dim"],
+    "statusBar.foreground": sem["text-subtle"],
+    "statusBar.border": sem.border,
+    "statusBar.noFolderBackground": sem["bg-dim"],
+    "statusBar.debuggingBackground": accent.orange,
+    "statusBar.debuggingForeground": sem.bg,
+
+    "titleBar.activeBackground": sem["bg-dim"],
+    "titleBar.activeForeground": sem.text,
+    "titleBar.inactiveBackground": sem["bg-dim"],
+    "titleBar.inactiveForeground": sem["text-faint"],
+    "titleBar.border": sem.border,
+
+    "tab.activeBackground": sem.bg,
+    "tab.inactiveBackground": sem["bg-dim"],
+    "tab.activeForeground": sem.text,
+    "tab.inactiveForeground": sem["text-faint"],
+    "tab.border": sem.border,
+    "tab.activeBorderTop": sem.accent,
+    "editorGroupHeader.tabsBackground": sem["bg-dim"],
+    "editorGroupHeader.tabsBorder": sem.border,
+
+    "panel.background": sem["bg-dim"],
+    "panel.border": sem.border,
+    "panelTitle.activeForeground": sem.text,
+    "panelTitle.inactiveForeground": sem["text-faint"],
+
+    "terminal.background": sem.bg,
+    "terminal.foreground": sem.text,
+    "terminalCursor.foreground": sem.cursor,
+    "terminal.ansiBlack": ansi.black,
+    "terminal.ansiRed": ansi.red,
+    "terminal.ansiGreen": ansi.green,
+    "terminal.ansiYellow": ansi.yellow,
+    "terminal.ansiBlue": ansi.blue,
+    "terminal.ansiMagenta": ansi.magenta,
+    "terminal.ansiCyan": ansi.cyan,
+    "terminal.ansiWhite": ansi.white,
+    "terminal.ansiBrightBlack": ansi.brightBlack,
+    "terminal.ansiBrightRed": ansi.brightRed,
+    "terminal.ansiBrightGreen": ansi.brightGreen,
+    "terminal.ansiBrightYellow": ansi.brightYellow,
+    "terminal.ansiBrightBlue": ansi.brightBlue,
+    "terminal.ansiBrightMagenta": ansi.brightMagenta,
+    "terminal.ansiBrightCyan": ansi.brightCyan,
+    "terminal.ansiBrightWhite": ansi.brightWhite,
+
+    "scrollbarSlider.background": alpha(sem["border-strong"], 30),
+    "scrollbarSlider.hoverBackground": alpha(sem["border-strong"], 50),
+    "scrollbarSlider.activeBackground": alpha(sem["border-strong"], 50),
+
+    "textLink.foreground": sem.link,
+    "textLink.activeForeground": sem["link-hover"],
+
+    "gitDecoration.modifiedResourceForeground": sem.link,
+    "gitDecoration.addedResourceForeground": sem.success,
+    "gitDecoration.deletedResourceForeground": sem.error,
+    "gitDecoration.untrackedResourceForeground": sem.success,
+    "gitDecoration.ignoredResourceForeground": sem["text-faint"],
+    "gitDecoration.conflictingResourceForeground": accent.orange,
+
+    "peekView.border": sem["border-strong"],
+    "peekViewEditor.background": sem["bg-sunken"],
+    "peekViewResult.background": sem["bg-dim"],
+    "menu.background": sem.popover,
+    "menu.foreground": sem.text,
+    "menu.selectionBackground": sem["surface-active"],
+  };
+
+  const tm = (scope, color, fontStyle) => ({
+    scope,
+    settings: fontStyle ? { foreground: color, fontStyle } : { foreground: color },
+  });
+
+  const tokenColors = [
+    tm(["comment", "punctuation.definition.comment"], syn.comment, "italic"),
+    tm(["string", "string.quoted", "string.template"], syn.string),
+    tm(["constant.character.escape", "string.regexp"], syn.escape),
+    tm(["constant.numeric"], syn.number),
+    tm(["constant.language", "constant.language.boolean"], syn.number),
+    tm(
+      ["keyword", "keyword.control", "keyword.operator.new", "keyword.operator.expression"],
+      syn.keyword,
+    ),
+    tm(["storage.type", "storage.modifier"], syn.keyword),
+    tm(
+      ["entity.name.function", "support.function", "meta.function-call.generic"],
+      syn.function,
+    ),
+    tm(
+      ["entity.name.type", "entity.name.class", "support.type", "support.class", "entity.other.inherited-class"],
+      syn.type,
+    ),
+    tm(["variable.parameter"], syn.parameter),
+    tm(["variable", "variable.other", "meta.definition.variable.name"], sem.text),
+    tm(
+      ["variable.language", "variable.language.this", "constant.builtin", "support.variable"],
+      syn.builtin,
+    ),
+    tm(
+      ["variable.other.property", "support.variable.property", "meta.object-literal.key"],
+      syn.property,
+    ),
+    tm(["entity.name.tag", "punctuation.definition.tag"], syn.tag),
+    tm(["entity.other.attribute-name"], syn.attribute),
+    tm(["keyword.operator", "punctuation.accessor"], syn.operator),
+    tm(
+      ["punctuation", "punctuation.separator", "punctuation.terminator", "meta.brace"],
+      syn.punctuation,
+    ),
+    tm(
+      ["meta.decorator", "entity.name.function.decorator", "punctuation.decorator"],
+      syn.decorator,
+    ),
+    tm(["support.type.property-name.css"], syn.property),
+    tm(["entity.name.tag.css", "support.constant.property-value.css"], syn.tag),
+    tm(["markup.heading", "entity.name.section"], accent.yellow, "bold"),
+    tm(["markup.bold"], accent.orange, "bold"),
+    tm(["markup.italic"], accent.blue, "italic"),
+    tm(["markup.underline.link", "string.other.link"], sem.link),
+    tm(["markup.inserted"], sem.success),
+    tm(["markup.deleted"], sem.error),
+    tm(["markup.changed"], sem.link),
+    tm(["invalid", "invalid.illegal"], sem.error),
+  ];
+
+  const semanticTokenColors = {
+    keyword: syn.keyword,
+    string: syn.string,
+    number: syn.number,
+    function: syn.function,
+    method: syn.function,
+    "function.defaultLibrary": syn.builtin,
+    type: syn.type,
+    class: syn.type,
+    interface: syn.type,
+    enum: syn.type,
+    struct: syn.type,
+    typeParameter: syn.type,
+    parameter: syn.parameter,
+    property: syn.property,
+    variable: sem.text,
+    "variable.readonly": syn.number,
+    enumMember: syn.number,
+    comment: { foreground: syn.comment, fontStyle: "italic" },
+    decorator: syn.decorator,
+    macro: syn.decorator,
+    operator: syn.operator,
+    namespace: syn.type,
+  };
+
+  const theme = {
+    name: meta.name,
+    type: meta.appearance,
+    semanticHighlighting: true,
+    colors,
+    tokenColors,
+    semanticTokenColors,
+  };
+
+  return [
+    {
+      path: "ports/vscode/themes/fadetouched-color-theme.json",
+      content: JSON.stringify(theme, null, 2) + "\n",
+    },
+  ];
+}

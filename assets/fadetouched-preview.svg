@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="298" viewBox="0 0 720 298" role="img" aria-label="Fadetouched theme preview">
+<rect x="0.5" y="0.5" width="719" height="297" rx="10" fill="#11201e" stroke="#3e4945"/>
+<path d="M0 36 h720" stroke="#3e4945"/>
+<rect width="720" height="36" rx="10" fill="#091816"/>
+<rect y="18" width="720" height="18" fill="#091816"/>
+<circle cx="22" cy="18" r="5" fill="#c87a75"/>
+<circle cx="40" cy="18" r="5" fill="#d7be86"/>
+<circle cx="58" cy="18" r="5" fill="#96bb93"/>
+<text x="360" y="23" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#979d98">fadetouched.ts</text>
+<rect x="44" y="135" width="664" height="22" fill="#dee1df" fill-opacity="0.05"/>
+<text x="36" y="62" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#666f6b">1</text>
+<text x="56" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve"><tspan fill="#af90c3">import </tspan><tspan fill="#979d98">{ </tspan><tspan fill="#dee1df">veil</tspan><tspan fill="#979d98"> } </tspan><tspan fill="#af90c3">from </tspan><tspan fill="#96bb93">"./fade"</tspan><tspan fill="#979d98">;</tspan></text>
+<text x="36" y="84" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#666f6b">2</text>
+<text x="36" y="106" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#666f6b">3</text>
+<text x="56" y="106" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve"><tspan fill="#666f6b" font-style="italic">// muted, earthy, teal-green</tspan></text>
+<text x="36" y="128" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#666f6b">4</text>
+<text x="56" y="128" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve"><tspan fill="#af90c3">export </tspan><tspan fill="#af90c3">function </tspan><tspan fill="#7daacf">touch</tspan><tspan fill="#979d98">(</tspan><tspan fill="#bc836c">n</tspan><tspan fill="#979d98">: </tspan><tspan fill="#d7be86">number</tspan><tspan fill="#979d98">)</tspan><tspan fill="#979d98">: </tspan><tspan fill="#d7be86">string</tspan><tspan fill="#979d98"> {</tspan></text>
+<text x="36" y="150" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#666f6b">5</text>
+<text x="56" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve"><tspan fill="#af90c3">  const </tspan><tspan fill="#dee1df">glow </tspan><tspan fill="#99c9c9">= </tspan><tspan fill="#dee1df">n </tspan><tspan fill="#99c9c9">* </tspan><tspan fill="#d7a176">1.07</tspan><tspan fill="#979d98">;</tspan></text>
+<text x="36" y="172" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#666f6b">6</text>
+<text x="56" y="172" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve"><tspan fill="#af90c3">  return </tspan><tspan fill="#96bb93">`fade ${</tspan><tspan fill="#dee1df">glow</tspan><tspan fill="#96bb93">}`</tspan><tspan fill="#979d98">;</tspan></text>
+<text x="36" y="194" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#666f6b">7</text>
+<text x="56" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve"><tspan fill="#979d98">}</tspan></text>
+<rect x="24.0" y="230" width="20" height="20" rx="4" fill="#03100f" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="80.3" y="230" width="20" height="20" rx="4" fill="#091816" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="136.7" y="230" width="20" height="20" rx="4" fill="#11201e" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="193.0" y="230" width="20" height="20" rx="4" fill="#1f2d29" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="249.3" y="230" width="20" height="20" rx="4" fill="#2e3a36" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="305.7" y="230" width="20" height="20" rx="4" fill="#3e4945" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="362.0" y="230" width="20" height="20" rx="4" fill="#505a56" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="418.3" y="230" width="20" height="20" rx="4" fill="#666f6b" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="474.7" y="230" width="20" height="20" rx="4" fill="#7e8580" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="531.0" y="230" width="20" height="20" rx="4" fill="#979d98" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="587.3" y="230" width="20" height="20" rx="4" fill="#b3b7b4" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="643.7" y="230" width="20" height="20" rx="4" fill="#dee1df" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="24.0" y="258" width="20" height="20" rx="4" fill="#c87a75" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="80.3" y="258" width="20" height="20" rx="4" fill="#bc836c" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="136.7" y="258" width="20" height="20" rx="4" fill="#d7a176" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="193.0" y="258" width="20" height="20" rx="4" fill="#d7be86" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="249.3" y="258" width="20" height="20" rx="4" fill="#96bb93" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="305.7" y="258" width="20" height="20" rx="4" fill="#81b8a8" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="362.0" y="258" width="20" height="20" rx="4" fill="#99c9c9" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="418.3" y="258" width="20" height="20" rx="4" fill="#7daacf" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="474.7" y="258" width="20" height="20" rx="4" fill="#7d89bb" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="531.0" y="258" width="20" height="20" rx="4" fill="#af90c3" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="587.3" y="258" width="20" height="20" rx="4" fill="#c593af" stroke="#3e4945" stroke-opacity="0.4"/>
+<rect x="643.7" y="258" width="20" height="20" rx="4" fill="#dbb5c1" stroke="#3e4945" stroke-opacity="0.4"/>
+</svg>

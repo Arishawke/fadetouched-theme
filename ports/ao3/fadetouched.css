@@ -1,0 +1,584 @@
+/* Fadetouched for AO3. Generated from palette.json. Do not edit by hand. */
+
+:root {
+  --ft-bg: #11201e;
+  --ft-bg-sunken: #03100f;
+  --ft-surface: #1f2d29;
+  --ft-surface-hover: #2e3a36;
+  --ft-surface-active: #3e4945;
+  --ft-border: #3e4945;
+  --ft-text: #dee1df;
+  --ft-text-muted: #b3b7b4;
+  --ft-link: #7daacf;
+  --ft-link-visited: #af90c3;
+  --ft-link-hover: #99c9c9;
+  --ft-accent: #96bb93;
+  --ft-pink: #dbb5c1;
+  --ft-error: #c87a75;
+  --ft-warning: #d7be86;
+  --ft-info: #81b8a8;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body,
+#outer,
+#inner,
+#main {
+  background: var(--ft-bg);
+  color: var(--ft-text);
+}
+
+a,
+a:link {
+  color: var(--ft-link);
+}
+a:visited {
+  color: var(--ft-link-visited);
+}
+a:hover,
+a:focus,
+a:visited:hover {
+  color: var(--ft-link-hover);
+}
+
+::selection {
+  background: var(--ft-accent);
+  color: var(--ft-bg);
+}
+
+#header,
+#footer {
+  background-image: none;
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+#header ul.primary,
+#header .primary {
+  background-image: none;
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+  box-shadow: none;
+}
+#header .actions a,
+#header .actions a:link,
+#header .actions a:visited {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+}
+#header .actions a:hover,
+#header .actions a:focus {
+  background-color: var(--ft-surface-hover) !important;
+  color: var(--ft-link-hover) !important;
+}
+#header .heading a,
+#header .heading a:link,
+#header .heading a:visited {
+  color: var(--ft-accent);
+}
+#header a,
+#header a:visited,
+#footer a,
+#footer a:visited {
+  color: var(--ft-link);
+}
+#header a:hover,
+#header a:focus,
+#footer a:hover,
+#footer a:focus {
+  color: var(--ft-link-hover);
+}
+
+#header .menu,
+#header .dropdown .menu,
+.dropdown,
+.autocomplete .dropdown,
+.autocomplete div.dropdown ul,
+.secondary,
+.toggled form,
+.dynamic form,
+div.dynamic,
+#small_login,
+#login {
+  background-color: var(--ft-surface);
+  background-image: none;
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+#header .menu a,
+#header .dropdown .menu a {
+  color: var(--ft-text) !important;
+}
+#header .menu a:hover,
+#header .menu a:focus,
+#header .dropdown .menu a:hover,
+#header .dropdown .menu a:focus {
+  background-color: var(--ft-surface-hover) !important;
+  color: var(--ft-link-hover) !important;
+}
+.autocomplete .dropdown ul li:hover,
+.autocomplete .dropdown li.selected {
+  background-color: var(--ft-surface-hover);
+  background-image: none;
+  color: var(--ft-text);
+}
+
+#header #search .text {
+  background-color: var(--ft-bg) !important;
+  background-image: none !important;
+  color: var(--ft-text) !important;
+  border: 1px solid var(--ft-surface-active) !important;
+  box-shadow: none !important;
+}
+
+.region {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+#dashboard,
+#dashboard.own,
+#dashboard ul {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+#dashboard.own {
+  border-top: none;
+  border-bottom: none;
+}
+#dashboard a:hover {
+  background-color: var(--ft-surface-hover);
+  color: var(--ft-text);
+}
+#dashboard .current {
+  background-color: var(--ft-surface-active);
+  color: var(--ft-text);
+}
+
+li.blurb,
+.blurb .blurb,
+.listbox,
+.listbox .index,
+.group.listbox,
+dl.meta,
+dl.stats {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+  box-shadow: none;
+}
+.listbox {
+  border-width: 1px;
+}
+.listbox .index {
+  border: none;
+}
+.heading,
+.listbox .heading {
+  color: var(--ft-text);
+}
+.listbox .heading a:visited {
+  color: var(--ft-link-visited);
+}
+.blurb .header .heading a,
+.blurb h4 a:link,
+a.work,
+a.tag {
+  color: var(--ft-link);
+}
+a.tag:hover {
+  background-color: var(--ft-surface-hover);
+  color: var(--ft-link-hover);
+}
+li.relationships a {
+  background-color: transparent;
+}
+.datetime,
+.stats,
+dl.stats {
+  color: var(--ft-text-muted);
+}
+
+#workskin {
+  color: var(--ft-text);
+}
+.userstuff {
+  color: var(--ft-text);
+  line-height: 1.6;
+}
+.userstuff a,
+.userstuff a:link {
+  color: var(--ft-link);
+}
+.userstuff h1,
+.userstuff h2,
+.userstuff h3,
+.userstuff h4 {
+  color: var(--ft-text);
+}
+.userstuff blockquote,
+.userstuff pre {
+  background-color: var(--ft-bg);
+  border-color: var(--ft-surface-hover);
+}
+.userstuff blockquote {
+  border-left: 3px solid var(--ft-accent);
+}
+
+.meta,
+.meta dt,
+.meta dd,
+div.preface,
+.preface .notes,
+ul.notes,
+.work.navigation .download {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+.meta dt {
+  color: var(--ft-text-muted);
+}
+div.preface .title,
+.preface h2.title {
+  color: var(--ft-text);
+}
+
+form dl,
+fieldset,
+fieldset fieldset,
+fieldset dl dl,
+form blockquote.userstuff,
+legend {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+  box-shadow: none;
+}
+form dd.required,
+.post .required .warnings {
+  color: var(--ft-text);
+}
+input,
+textarea,
+select {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+  box-shadow: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: var(--ft-bg);
+  border-color: var(--ft-accent);
+}
+form.verbose legend,
+.verbose form legend {
+  background-color: var(--ft-surface);
+  border-color: var(--ft-surface-hover);
+  box-shadow: none;
+  color: var(--ft-text);
+}
+
+.actions a,
+.actions a:link,
+.action,
+.action:link,
+.actions button,
+.actions input,
+input[type="submit"],
+input[type="button"],
+button,
+.actions label {
+  background-color: var(--ft-surface) !important;
+  background-image: none !important;
+  color: var(--ft-text) !important;
+  border-color: var(--ft-surface-hover) !important;
+}
+.actions a:hover,
+.actions a:focus,
+.actions button:hover,
+.actions button:focus,
+.actions input:hover,
+.actions input:focus,
+.action:hover,
+.action:focus,
+button:hover,
+button:focus {
+  background-color: var(--ft-surface-hover) !important;
+  color: var(--ft-link-hover) !important;
+}
+.actions a:visited,
+.action:visited {
+  color: var(--ft-text-muted) !important;
+}
+.current,
+a.current,
+a:link.current {
+  background-color: var(--ft-surface-active) !important;
+  background-image: none !important;
+  color: var(--ft-text) !important;
+  border-color: var(--ft-accent) !important;
+}
+
+table,
+th,
+td,
+thead td,
+tbody tr {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+thead td,
+th {
+  background-color: var(--ft-surface);
+}
+tr:hover {
+  background-color: var(--ft-surface-hover);
+}
+
+.flash,
+.notice,
+.comment_notice,
+.kudos_notice {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-info);
+}
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash.error {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  border-color: var(--ft-error);
+}
+.caution {
+  background-color: var(--ft-bg);
+  color: var(--ft-warning);
+  border-color: var(--ft-warning);
+}
+.notice a,
+.caution a {
+  color: var(--ft-link);
+}
+
+.splash .module h3 {
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+.splash .browse li a:before {
+  color: var(--ft-accent);
+}
+.splash .favorite li:nth-of-type(odd) a {
+  background-color: var(--ft-surface);
+}
+.splash .favorite li:nth-of-type(odd) a:hover,
+.splash .favorite li:nth-of-type(odd) a:focus {
+  background-color: var(--ft-surface-hover);
+  color: var(--ft-link-hover);
+}
+.splash .module div.account {
+  background-color: var(--ft-bg);
+  border-color: var(--ft-surface-hover);
+}
+
+.comment h4.byline,
+.reading h4.viewed {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+}
+.thread .even,
+.statistics .index li:nth-of-type(even) {
+  background-color: transparent;
+}
+div.comment,
+li.comment,
+.bookmark .user {
+  border-color: var(--ft-surface-hover);
+}
+.comment fieldset {
+  border: none;
+}
+.comment div.icon {
+  border-color: var(--ft-surface-hover);
+}
+
+.required,
+.delete a,
+span.delete {
+  color: var(--ft-error);
+}
+
+#ui-datepicker-div,
+.ui-datepicker table,
+#modal {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+.qtip-content {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-info);
+}
+
+.filters fieldset {
+  border: none;
+}
+.filters dt {
+  border-bottom: none;
+}
+dl.index dd {
+  background-color: transparent;
+}
+.autocomplete .dropdown p,
+.autocomplete .notice {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+.filters .indicator:before {
+  background: var(--ft-bg);
+  background-image: none;
+  border-color: var(--ft-surface-active);
+}
+.filters input:checked + .indicator:before {
+  border-color: var(--ft-accent);
+}
+.filters [type="checkbox"]:checked + .indicator:before,
+.filters [type="radio"]:checked + .indicator:before {
+  background: var(--ft-accent);
+  background-image: none;
+}
+.filters .exclude [type="checkbox"]:checked + .indicator:before {
+  background: var(--ft-error);
+  background-image: none;
+  border-color: var(--ft-error);
+}
+
+.work.navigation .download .secondary,
+.javascript .work.navigation .download .secondary {
+  background-color: var(--ft-surface);
+  background-image: none;
+  color: var(--ft-text);
+  border: 1px solid var(--ft-surface-hover);
+  box-shadow: none;
+}
+
+#tos_prompt {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+  box-shadow: none;
+}
+#tos_prompt .heading,
+#tos_prompt h2 {
+  background-color: var(--ft-surface-active);
+  background-image: none;
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+
+#site_search_tooltip,
+.tip {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+  box-shadow: none;
+}
+span.symbol.question {
+  background-color: var(--ft-surface);
+  color: var(--ft-text);
+  border-color: var(--ft-surface-hover);
+}
+
+.own,
+.draft,
+.draft .wrapper,
+.unread,
+.child,
+.unwrangled,
+.unreviewed {
+  background-color: var(--ft-bg);
+}
+
+.resp-sharing-button--twitter,
+.resp-sharing-button--tumblr,
+.resp-sharing-button--bluesky {
+  background-color: var(--ft-surface);
+  border-color: var(--ft-surface-hover);
+}
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--tumblr:hover,
+.resp-sharing-button--bluesky:hover,
+.resp-sharing-button--twitter:focus,
+.resp-sharing-button--tumblr:focus,
+.resp-sharing-button--bluesky:focus {
+  background-color: var(--ft-surface-hover);
+}
+a.resp-sharing-button__link,
+a.resp-sharing-button__link:hover {
+  color: var(--ft-text);
+}
+
+#new_kudo input[type="submit"],
+#new_kudo input[type="submit"]:hover,
+#new_kudo input[type="submit"]:focus {
+  color: var(--ft-pink) !important;
+}
+
+.nomination dt {
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+}
+.nominations .approved,
+.nominations .rejected {
+  background-color: var(--ft-bg);
+}
+span.offered,
+.nominations .approved {
+  color: var(--ft-accent);
+}
+span.requested,
+.nominations .rejected {
+  color: var(--ft-error);
+}
+span.offered.requested {
+  color: var(--ft-warning);
+}
+#modal .content {
+  border-color: var(--ft-surface-hover);
+}
+
+#dashboard ul,
+fieldset,
+fieldset fieldset,
+form.verbose legend,
+.verbose form legend,
+thead,
+tfoot,
+.comment div.icon,
+.wrapper,
+.secondary,
+.dropdown,
+#header .menu,
+#small_login,
+#login,
+.toggled form,
+.dynamic form,
+div.dynamic,
+#modal,
+#ui-datepicker-div,
+.qtip-content {
+  border-width: 1px;
+  box-shadow: none;
+}

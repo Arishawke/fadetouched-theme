@@ -1,0 +1,103 @@
+# Fadetouched. Generated from palette.json. Do not edit by hand.
+
+"ui.background" = { bg = "n2" }
+"ui.text" = "n11"
+"ui.text.focus" = { fg = "n11", modifiers = ["bold"] }
+"ui.text.inactive" = "n7"
+"ui.linenr" = "n7"
+"ui.linenr.selected" = "indigo"
+"ui.cursor" = { fg = "n2", bg = "pink" }
+"ui.cursor.primary" = { fg = "n2", bg = "pink" }
+"ui.cursor.match" = { bg = "n4" }
+"ui.cursorline.primary" = { bg = "n3" }
+"ui.selection" = { bg = "n5" }
+"ui.selection.primary" = { bg = "n5" }
+"ui.statusline" = { fg = "n9", bg = "n1" }
+"ui.statusline.inactive" = { fg = "n7", bg = "n1" }
+"ui.statusline.normal" = { fg = "n2", bg = "green" }
+"ui.statusline.insert" = { fg = "n2", bg = "blue" }
+"ui.statusline.select" = { fg = "n2", bg = "purple" }
+"ui.popup" = { bg = "n3" }
+"ui.window" = { fg = "n5" }
+"ui.help" = { fg = "n11", bg = "n3" }
+"ui.menu" = { fg = "n11", bg = "n3" }
+"ui.menu.selected" = { fg = "n11", bg = "n5" }
+"ui.virtual.whitespace" = "n5"
+"ui.virtual.ruler" = { bg = "n3" }
+"ui.virtual.indent-guide" = "n4"
+"ui.virtual.inlay-hint" = "n7"
+"comment" = { fg = "n7", modifiers = ["italic"] }
+"keyword" = "purple"
+"keyword.control" = "purple"
+"keyword.directive" = "indigo"
+"keyword.storage" = "purple"
+"string" = "green"
+"string.regexp" = "magenta"
+"constant.character.escape" = "magenta"
+"constant" = "orange"
+"constant.numeric" = "orange"
+"constant.builtin" = "red"
+"function" = "blue"
+"function.method" = "blue"
+"function.macro" = "indigo"
+"function.special" = "indigo"
+"type" = "yellow"
+"type.builtin" = "yellow"
+"type.enum.variant" = "orange"
+"constructor" = "yellow"
+"variable" = "n11"
+"variable.parameter" = { fg = "rust" }
+"variable.builtin" = "red"
+"variable.other.member" = "blue"
+"label" = "indigo"
+"namespace" = "yellow"
+"operator" = "cyan"
+"punctuation" = "n9"
+"punctuation.delimiter" = "n9"
+"punctuation.bracket" = "n9"
+"tag" = "teal"
+"attribute" = "yellow"
+"markup.heading" = { fg = "yellow", modifiers = ["bold"] }
+"markup.bold" = { fg = "orange", modifiers = ["bold"] }
+"markup.italic" = { fg = "blue", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "teal"
+"markup.raw" = "green"
+"markup.quote" = "n9"
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "blue"
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "teal", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "cyan", style = "curl" } }
+"error" = "red"
+"warning" = "yellow"
+"info" = "teal"
+"hint" = "cyan"
+
+[palette]
+n0 = "#03100f"
+n1 = "#091816"
+n2 = "#11201e"
+n3 = "#1f2d29"
+n4 = "#2e3a36"
+n5 = "#3e4945"
+n6 = "#505a56"
+n7 = "#666f6b"
+n8 = "#7e8580"
+n9 = "#979d98"
+n10 = "#b3b7b4"
+n11 = "#dee1df"
+red = "#c87a75"
+rust = "#bc836c"
+orange = "#d7a176"
+yellow = "#d7be86"
+green = "#96bb93"
+teal = "#81b8a8"
+cyan = "#99c9c9"
+blue = "#7daacf"
+indigo = "#7d89bb"
+purple = "#af90c3"
+magenta = "#c593af"
+pink = "#dbb5c1"

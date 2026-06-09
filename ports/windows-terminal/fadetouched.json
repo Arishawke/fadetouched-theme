@@ -1,0 +1,28 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "schemes": [
+    {
+      "name": "Fadetouched",
+      "background": "#11201e",
+      "foreground": "#dee1df",
+      "cursorColor": "#dbb5c1",
+      "selectionBackground": "#505a56",
+      "black": "#2e3a36",
+      "red": "#c87a75",
+      "green": "#96bb93",
+      "yellow": "#d7be86",
+      "blue": "#7daacf",
+      "purple": "#c593af",
+      "cyan": "#81b8a8",
+      "white": "#979d98",
+      "brightBlack": "#3e4945",
+      "brightRed": "#da8681",
+      "brightGreen": "#a5cda2",
+      "brightYellow": "#ebd094",
+      "brightBlue": "#8abae2",
+      "brightPurple": "#d7a1c0",
+      "brightCyan": "#8ec9b8",
+      "brightWhite": "#b3b7b4"
+    }
+  ]
+}

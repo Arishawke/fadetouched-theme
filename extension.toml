@@ -1,0 +1,7 @@
+id = "fadetouched-theme"
+name = "Fadetouched"
+version = "1.0.0"
+schema_version = 1
+authors = ["Arishawke"]
+description = "A dark teal-green, earthy color theme authored in OKLCH."
+repository = "https://github.com/Arishawke/fadetouched-theme"

@@ -1,0 +1,37 @@
+# dependencies
+node_modules/
+
+# os / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# logs
+npm-debug.log*
+
+# private / local-only docs and scratch (kept out of public artifacts)
+docs/private/
+recycling-bin/
+HANDOFF.md
+*.handoff.md
+
+# vscode extension build output
+ports/vscode/*.vsix
+
+# firefox extension build output
+ports/firefox/*.xpi
+
+# playwright mcp artifacts
+.playwright-mcp/
+
+# palette exploration scratch (throwaway, never committed)
+.preview-scratch/
+.superpowers/
+
+# dev-only apparatus, kept local (run the checks without publishing them)
+test/
+.github/workflows/
+scripts/contrast.mjs
+
+# changelog kept local for now (not published)
+CHANGELOG.md

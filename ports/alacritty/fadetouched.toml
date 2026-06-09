@@ -1,0 +1,33 @@
+# Fadetouched. Generated from palette.json. Do not edit by hand.
+
+[colors.primary]
+background = "#11201e"
+foreground = "#dee1df"
+
+[colors.cursor]
+text = "#11201e"
+cursor = "#dbb5c1"
+
+[colors.selection]
+text = "CellForeground"
+background = "#505a56"
+
+[colors.normal]
+black = "#2e3a36"
+red = "#c87a75"
+green = "#96bb93"
+yellow = "#d7be86"
+blue = "#7daacf"
+magenta = "#c593af"
+cyan = "#81b8a8"
+white = "#979d98"
+
+[colors.bright]
+black = "#3e4945"
+red = "#da8681"
+green = "#a5cda2"
+yellow = "#ebd094"
+blue = "#8abae2"
+magenta = "#d7a1c0"
+cyan = "#8ec9b8"
+white = "#b3b7b4"
