@@ -133,6 +133,14 @@ spinner for the busy and progress cursors. Prebuilt Windows and Linux (XCursor)
 packs and install steps are in [`ports/cursor/`](ports/cursor/). This is the one
 GPL-3.0 part of the project (it derives from Bibata); see License below.
 
+### In testing
+Generated from the same palette and usable, but not yet verified or documented
+with install steps, so expect rough edges and please report anything off:
+[`alacritty`](ports/alacritty/), [`base16`](ports/base16/),
+[`helix`](ports/helix/), [`iterm`](ports/iterm/), [`kitty`](ports/kitty/),
+[`limine`](ports/limine/), [`neovim`](ports/neovim/), [`termux`](ports/termux/),
+[`vscode`](ports/vscode/), [`web`](ports/web/), [`zsh`](ports/zsh/).
+
 ## License
 
 [MIT](LICENSE). © Arishawke.
