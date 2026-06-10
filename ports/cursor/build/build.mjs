@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, copyFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, copyFileSync, existsSync, rmSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { recolorMap, cbmpColors, FRAMES } from "./colors.mjs";
@@ -35,10 +35,16 @@ function stage() {
   }
 }
 
+function fresh(dir) {
+  if (existsSync(dir)) rmSync(dir, { recursive: true, force: true });
+}
+
 function build() {
   run(cbmp, ["-d", SVG, "-o", BITMAPS, "-bc", cbmpColors.bc, "-oc", cbmpColors.oc, "-wc", cbmpColors.wc]);
   const cfg = here("../src/configs");
+  fresh(`${X}/Fadetouched-Modern`);
   run("ctgen", [`${cfg}/x.build.toml`, "-d", BITMAPS, "-n", "Fadetouched-Modern", "-o", X, "-p", "x11"]);
+  fresh(`${WIN}/Fadetouched-Modern-Windows`);
   run("ctgen", [`${cfg}/win_rg.build.toml`, "-d", BITMAPS, "-n", "Fadetouched-Modern", "-o", WIN, "-p", "windows"]);
 }
 
@@ -46,7 +52,7 @@ function dist() {
   const distRoot = here("../dist");
   const distWin = `${distRoot}/Fadetouched-Modern-Windows`;
   mkdirSync(distWin, { recursive: true });
-  const winSrc = `${WIN}/Fadetouched-Modern`;
+  const winSrc = `${WIN}/Fadetouched-Modern-Windows`;
   for (const f of readdirSync(winSrc)) copyFileSync(`${winSrc}/${f}`, `${distWin}/${f}`);
   run("tar", ["-czf", `${distRoot}/Fadetouched-Modern-XCursor.tar.gz`, "-C", X, "Fadetouched-Modern"]);
 }
