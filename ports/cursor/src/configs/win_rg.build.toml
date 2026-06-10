@@ -1,7 +1,7 @@
 [theme]
-name = 'Bibata Regular Windows Cursor'
-comment = 'Bibata is open source, compact, and material designed cursor set.'
-website = 'https://www.bibata.live'
+name = 'Fadetouched Modern Windows'
+comment = 'Fadetouched dark cursor, based on Bibata Modern.'
+website = 'https://github.com/Arishawke/fadetouched-theme'
 
 [config]
 bitmaps_dir = '' # This config will assigned with `ctgen -d <path>`
