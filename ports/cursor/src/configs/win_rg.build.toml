@@ -59,7 +59,6 @@ win_name = 'Pointer'
 
 [cursors.left_ptr_watch]
 png = 'left_ptr_watch-*.png'
-win_sizes = "64:96"
 x_hotspot = 55
 y_hotspot = 17
 win_name = 'Work'
@@ -96,7 +95,6 @@ win_name = 'Vert'
 
 [cursors.wait]
 png = 'wait-*.png'
-win_sizes = "64:96"
 win_name = 'Busy'
 
 [cursors.xterm]
