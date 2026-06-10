@@ -34,7 +34,7 @@ function ring(cx, cy, r, stroke, headDeg, glowOp, glowR, dotR) {
     comet(cx, cy, r, headDeg, 165, 30, dotR);
 }
 
-const defs = `<defs><filter id="bloom" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter></defs>`;
+const defs = `<defs><filter id="bloom" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8"/></filter></defs>`;
 
 function glowOpacity(i) {
   return 0.45 + 0.5 * (0.5 - 0.5 * Math.cos((i / FRAMES) * TAU));
@@ -42,7 +42,7 @@ function glowOpacity(i) {
 
 export function waitFrame(i) {
   const head = -90 + (i / FRAMES) * 360;
-  const body = ring(128, 128, 72, 12, head, glowOpacity(i), 26, 7);
+  const body = ring(128, 128, 78, 40, head, glowOpacity(i), 40, 20);
   return `<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">${defs}${body}</svg>`;
 }
 
@@ -53,6 +53,6 @@ function arrowInner() {
 
 export function progressFrame(i) {
   const head = -90 + (i / FRAMES) * 360;
-  const r = ring(196, 176, 28, 7, head, glowOpacity(i), 12, 3.4);
+  const r = ring(210, 172, 32, 18, head, glowOpacity(i), 18, 9);
   return `<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">${defs}${arrowInner()}${r}</svg>`;
 }
