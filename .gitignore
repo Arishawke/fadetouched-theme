@@ -9,8 +9,8 @@ Thumbs.db
 # logs
 npm-debug.log*
 
-# private / local-only docs and scratch (kept out of public artifacts)
-docs/private/
+# local-only docs and scratch (kept out of public artifacts)
+docs/
 recycling-bin/
 HANDOFF.md
 *.handoff.md
