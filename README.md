@@ -127,6 +127,17 @@ create it. Then click **Use** on the skin (or set it as your default under
 **Preferences**). Site skins apply only while you're logged in; re-paste the CSS
 after any update.
 
+### Cursor
+A dark cursor set based on Bibata Modern, with a custom green "veilfire" ring
+spinner for the busy and progress cursors. Prebuilt Windows and Linux (XCursor)
+packs and install steps are in [`ports/cursor/`](ports/cursor/). This is the one
+GPL-3.0 part of the project (it derives from Bibata); see License below.
+
 ## License
 
 [MIT](LICENSE). © Arishawke.
+
+Exception: [`ports/cursor/`](ports/cursor/) is **GPL-3.0**, because it derives
+from [Bibata](https://github.com/ful1e5/Bibata_Cursor). It carries its own
+[`LICENSE`](ports/cursor/LICENSE) and
+[`ATTRIBUTION.md`](ports/cursor/ATTRIBUTION.md). Everything else is MIT.

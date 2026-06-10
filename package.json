@@ -31,6 +31,7 @@
     "contrast": "node scripts/contrast.mjs",
     "test": "node --test",
     "check": "npm run build && npm run contrast && npm test",
-    "pack:firefox": "node scripts/pack-firefox.mjs"
+    "pack:firefox": "node scripts/pack-firefox.mjs",
+    "pack:cursor": "node ports/cursor/build/build.mjs"
   }
 }
