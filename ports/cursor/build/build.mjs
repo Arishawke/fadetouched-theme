@@ -22,7 +22,12 @@ function run(cmd, args) {
   execFileSync(cmd, args, { stdio: "inherit", env: { ...process.env, PUPPETEER_SKIP_DOWNLOAD: "true" } });
 }
 
+function fresh(dir) {
+  if (existsSync(dir)) rmSync(dir, { recursive: true, force: true });
+}
+
 function stage() {
+  fresh(SVG);
   mkdirSync(`${SVG}/wait`, { recursive: true });
   mkdirSync(`${SVG}/left_ptr_watch`, { recursive: true });
   const src = here("../src/svg/modern");
@@ -33,10 +38,6 @@ function stage() {
     writeFileSync(`${SVG}/wait/wait-${pad(i)}.svg`, waitFrame(i));
     writeFileSync(`${SVG}/left_ptr_watch/left_ptr_watch-${pad(i)}.svg`, progressFrame(i));
   }
-}
-
-function fresh(dir) {
-  if (existsSync(dir)) rmSync(dir, { recursive: true, force: true });
 }
 
 function build() {
@@ -51,10 +52,13 @@ function build() {
 function dist() {
   const distRoot = here("../dist");
   const distWin = `${distRoot}/Fadetouched-Modern-Windows`;
+  fresh(distWin);
   mkdirSync(distWin, { recursive: true });
   const winSrc = `${WIN}/Fadetouched-Modern-Windows`;
   for (const f of readdirSync(winSrc)) copyFileSync(`${winSrc}/${f}`, `${distWin}/${f}`);
-  run("tar", ["-czf", `${distRoot}/Fadetouched-Modern-XCursor.tar.gz`, "-C", X, "Fadetouched-Modern"]);
+  const tar = `${distRoot}/Fadetouched-Modern-XCursor.tar`;
+  run("tar", ["--sort=name", "--mtime=@1700000000", "--owner=0", "--group=0", "--numeric-owner", "-cf", tar, "-C", X, "Fadetouched-Modern"]);
+  run("gzip", ["-nf", tar]);
 }
 
 function contactSheet() {
