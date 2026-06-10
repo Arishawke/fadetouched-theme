@@ -13,7 +13,7 @@ platforms =  'windows'
 win_sizes = ["22:32", "32:48", "43:64", "64:96", "86:128"]
 x_hotspot = 128
 y_hotspot = 128
-win_delay = 1
+win_delay = 2
 
 [cursors.bd_double_arrow]
 png = 'bd_double_arrow.png'
