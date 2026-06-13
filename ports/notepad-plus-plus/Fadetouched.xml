@@ -263,6 +263,7 @@
         <WordsStyle name="number" styleID="4" fgColor="D7A176" bgColor="11201E" fontName="" fontStyle="0" fontSize="" />
         <WordsStyle name="deleted" styleID="5" fgColor="C87A75" bgColor="11201E" fontName="" fontStyle="0" fontSize="" />
         <WordsStyle name="added" styleID="6" fgColor="96BB93" bgColor="11201E" fontName="" fontStyle="0" fontSize="" />
+        <WordsStyle name="changed" styleID="7" fgColor="D7BE86" bgColor="11201E" fontName="" fontStyle="0" fontSize="" />
     </LexerType>
     <LexerType name="searchResult" desc="Search result" ext="">
         <WordsStyle name="function" styleID="1" fgColor="7DAACF" bgColor="11201E" fontName="" fontStyle="0" fontSize="" />

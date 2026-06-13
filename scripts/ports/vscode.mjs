@@ -29,6 +29,13 @@ export default function render(ctx) {
     "editorIndentGuide.activeBackground1": sem.border,
     "editorBracketMatch.background": alpha(sem.info, 18),
     "editorBracketMatch.border": sem.border,
+    "editorBracketHighlight.foreground1": accent.blue,
+    "editorBracketHighlight.foreground2": accent.purple,
+    "editorBracketHighlight.foreground3": accent.teal,
+    "editorBracketHighlight.foreground4": accent.yellow,
+    "editorBracketHighlight.foreground5": accent.magenta,
+    "editorBracketHighlight.foreground6": accent.cyan,
+    "editorBracketHighlight.unexpectedBracket.foreground": sem.error,
 
     "editorError.foreground": sem.error,
     "editorWarning.foreground": sem.warning,
@@ -37,11 +44,19 @@ export default function render(ctx) {
     "editorGutter.modifiedBackground": sem.link,
     "editorGutter.addedBackground": sem.success,
     "editorGutter.deletedBackground": sem.error,
+    "editorOverviewRuler.findMatchForeground": alpha(sem.info, 50),
+    "editorOverviewRuler.errorForeground": sem.error,
+    "editorOverviewRuler.warningForeground": sem.warning,
+    "editorOverviewRuler.modifiedForeground": sem.link,
+    "editorOverviewRuler.addedForeground": sem.success,
+    "editorOverviewRuler.deletedForeground": sem.error,
 
     "editorWidget.background": sem.popover,
     "editorWidget.border": sem.border,
     "editorSuggestWidget.background": sem.popover,
     "editorSuggestWidget.selectedBackground": sem["surface-active"],
+    "editorSuggestWidget.highlightForeground": sem.link,
+    "editorSuggestWidget.focusHighlightForeground": sem.link,
     "editorHoverWidget.background": sem.popover,
     "editorHoverWidget.border": sem.border,
 
@@ -49,6 +64,9 @@ export default function render(ctx) {
     "input.border": sem.border,
     "input.foreground": sem.text,
     "input.placeholderForeground": sem["text-faint"],
+    "inputOption.activeBackground": alpha(sem.accent, 30),
+    "inputOption.activeBorder": sem.accent,
+    "inputOption.activeForeground": sem.text,
     "dropdown.background": sem.surface,
     "dropdown.border": sem.border,
     "dropdown.foreground": sem.text,
@@ -64,6 +82,7 @@ export default function render(ctx) {
     "activityBar.foreground": sem.text,
     "activityBar.inactiveForeground": sem["text-faint"],
     "activityBar.border": sem.border,
+    "activityBar.activeBorder": sem.accent,
     "activityBarBadge.background": sem.accent,
     "activityBarBadge.foreground": sem.bg,
 
@@ -80,6 +99,9 @@ export default function render(ctx) {
     "list.inactiveSelectionBackground": sem.surface,
     "list.highlightForeground": sem.link,
     "list.focusBackground": sem["surface-active"],
+    "list.focusOutline": sem.accent,
+    "pickerGroup.foreground": sem.link,
+    "pickerGroup.border": sem.border,
 
     "statusBar.background": sem["bg-dim"],
     "statusBar.foreground": sem["text-subtle"],
@@ -87,6 +109,10 @@ export default function render(ctx) {
     "statusBar.noFolderBackground": sem["bg-dim"],
     "statusBar.debuggingBackground": accent.orange,
     "statusBar.debuggingForeground": sem.bg,
+    "statusBar.focusBorder": sem.accent,
+    "statusBarItem.focusBorder": sem.accent,
+    "statusBarItem.remoteBackground": sem.accent,
+    "statusBarItem.remoteForeground": sem.bg,
 
     "titleBar.activeBackground": sem["bg-dim"],
     "titleBar.activeForeground": sem.text,
@@ -100,16 +126,20 @@ export default function render(ctx) {
     "tab.inactiveForeground": sem["text-faint"],
     "tab.border": sem.border,
     "tab.activeBorderTop": sem.accent,
+    "tab.selectedBorderTop": sem.accent,
     "editorGroupHeader.tabsBackground": sem["bg-dim"],
     "editorGroupHeader.tabsBorder": sem.border,
 
     "panel.background": sem["bg-dim"],
     "panel.border": sem.border,
     "panelTitle.activeForeground": sem.text,
+    "panelTitle.activeBorder": sem.accent,
     "panelTitle.inactiveForeground": sem["text-faint"],
 
     "terminal.background": sem.bg,
     "terminal.foreground": sem.text,
+    "terminal.tab.activeBorder": sem.accent,
+    "terminal.selectionBackground": alpha(sem["border-strong"], 30),
     "terminalCursor.foreground": sem.cursor,
     "terminal.ansiBlack": ansi.black,
     "terminal.ansiRed": ansi.red,
@@ -134,8 +164,11 @@ export default function render(ctx) {
 
     "textLink.foreground": sem.link,
     "textLink.activeForeground": sem["link-hover"],
+    "editorLink.activeForeground": sem.link,
+    "notificationLink.foreground": sem.link,
+    "welcomePage.progress.foreground": sem.accent,
 
-    "gitDecoration.modifiedResourceForeground": sem.link,
+    "gitDecoration.modifiedResourceForeground": sem.warning,
     "gitDecoration.addedResourceForeground": sem.success,
     "gitDecoration.deletedResourceForeground": sem.error,
     "gitDecoration.untrackedResourceForeground": sem.success,
@@ -144,10 +177,13 @@ export default function render(ctx) {
 
     "peekView.border": sem["border-strong"],
     "peekViewEditor.background": sem["bg-sunken"],
+    "peekViewEditor.matchHighlightBackground": alpha(sem.info, 30),
     "peekViewResult.background": sem["bg-dim"],
+    "peekViewResult.matchHighlightBackground": alpha(sem.info, 30),
     "menu.background": sem.popover,
     "menu.foreground": sem.text,
     "menu.selectionBackground": sem["surface-active"],
+    "settings.modifiedItemIndicator": sem.warning,
   };
 
   const tm = (scope, color, fontStyle) => ({
@@ -203,7 +239,7 @@ export default function render(ctx) {
     tm(["markup.underline.link", "string.other.link"], sem.link),
     tm(["markup.inserted"], sem.success),
     tm(["markup.deleted"], sem.error),
-    tm(["markup.changed"], sem.link),
+    tm(["markup.changed"], sem.warning),
     tm(["invalid", "invalid.illegal"], sem.error),
   ];
 

@@ -24,6 +24,7 @@ export default function render(ctx) {
     error: sem.error,
     added: sem.success,
     deleted: sem.error,
+    changed: sem.warning,
   };
 
   const words = ([id, role]) =>
@@ -112,7 +113,7 @@ export default function render(ctx) {
     ]),
     lexer("diff", "Diff", [
       [0, "default"], [1, "comment"], [2, "keyword"], [3, "function"], [4, "number"],
-      [5, "deleted"], [6, "added"],
+      [5, "deleted"], [6, "added"], [7, "changed"],
     ]),
     lexer("searchResult", "Search result", [
       [1, "function"], [2, "keyword"], [3, "number"], [4, "type"],
