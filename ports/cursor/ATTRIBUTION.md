@@ -23,9 +23,7 @@ copyright Arishawke; original work copyright Abdulkaiz Khatri.
 
 Used to render and package the cursors. Not redistributed here.
 
-## Courtesy credits
-
-Not required, included with thanks:
+## Other credits
 
 - **base16** specification, tinted-theming, MIT (originally by Chris Kempson).
   https://github.com/tinted-theming/home
