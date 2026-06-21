@@ -144,7 +144,7 @@ div.dynamic,
 #dashboard,
 #dashboard.own,
 #dashboard ul {
-  background-color: var(--ft-surface);
+  background-color: var(--ft-bg);
   color: var(--ft-text);
   border-color: var(--ft-surface-hover);
 }
@@ -152,9 +152,19 @@ div.dynamic,
   border-top: none;
   border-bottom: none;
 }
-#dashboard a:hover {
-  background-color: var(--ft-surface-hover);
-  color: var(--ft-text);
+#dashboard li + li {
+  border-top: 1px solid var(--ft-surface-hover);
+}
+#dashboard a,
+#dashboard a:link,
+#dashboard a:visited {
+  background-color: var(--ft-bg) !important;
+  color: var(--ft-text) !important;
+}
+#dashboard a:hover,
+#dashboard a:focus {
+  background-color: var(--ft-surface-hover) !important;
+  color: var(--ft-link-hover) !important;
 }
 #dashboard .current {
   background-color: var(--ft-surface-active);
@@ -278,6 +288,9 @@ textarea:focus,
 select:focus {
   background-color: var(--ft-bg);
   border-color: var(--ft-accent);
+  outline: 1px solid var(--ft-accent);
+  outline-offset: -1px;
+  box-shadow: none;
 }
 form.verbose legend,
 .verbose form legend {
@@ -326,6 +339,11 @@ a:link.current {
   background-image: none !important;
   color: var(--ft-text) !important;
   border-color: var(--ft-accent) !important;
+}
+.action a,
+.action a:link,
+.action a:visited {
+  color: var(--ft-link) !important;
 }
 
 table,
@@ -436,6 +454,11 @@ span.delete {
 }
 .filters dt {
   border-bottom: none;
+}
+.filters .expander {
+  background-color: var(--ft-bg) !important;
+  border-bottom: 1px solid var(--ft-surface-hover) !important;
+  border-radius: 0 !important;
 }
 dl.index dd {
   background-color: transparent;
