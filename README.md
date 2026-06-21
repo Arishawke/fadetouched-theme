@@ -69,7 +69,7 @@ Each material shown over a mock desktop: opaque, transparent, blur, acrylic, and
 
 ## Ports
 
-These ports work but are still in testing, so expect the occasional rough edge, and please report anything that looks off. More ports are in progress and will be added here as they're verified.
+Each port below is verified and has install steps. More are generated from the same palette but not yet verified; those are listed under [In testing](#in-testing). Please report anything that looks off.
 
 ### Zed
 ```sh
@@ -95,7 +95,9 @@ cp ports/kde-plasma/Fadetouched.colors ~/.local/share/color-schemes/
 ```
 Then pick **Fadetouched** in **System Settings → Colors & Themes → Colors**. To
 drive the system accent from the theme's green, set **Accent color → From current
-color scheme** on that same page.
+color scheme** on that same page. This is a color scheme only, not a full Plasma
+desktop theme: it recolors apps and the shell but leaves icons, window
+decorations, and the Plasma style as you have them.
 
 ### Konsole
 ```sh
@@ -112,6 +114,15 @@ profile only sets the colors and cursor; it falls back to Konsole's defaults for
 anything it leaves out (font included), so re-pick your font on it if needed.
 Konsole has no custom selection color: it derives the selection highlight from
 the scheme automatically.
+
+### Starship
+A two-line powerline prompt. Copy the config to Starship's default path:
+```sh
+cp ports/starship/fadetouched.toml ~/.config/starship.toml
+```
+Needs a [Nerd Font](https://www.nerdfonts.com/) for the powerline separators and
+language icons. To keep it as a separate file instead of your main config, point
+the `STARSHIP_CONFIG` environment variable at it instead.
 
 ### Notepad++
 Copy [`ports/notepad-plus-plus/Fadetouched.xml`](ports/notepad-plus-plus/Fadetouched.xml)
@@ -138,9 +149,8 @@ Generated from the same palette and usable, but not yet verified or documented
 with install steps, so expect rough edges and please report anything off:
 [`alacritty`](ports/alacritty/), [`base16`](ports/base16/),
 [`helix`](ports/helix/), [`iterm`](ports/iterm/), [`kitty`](ports/kitty/),
-[`limine`](ports/limine/), [`neovim`](ports/neovim/), [`starship`](ports/starship/),
-[`termux`](ports/termux/), [`vscode`](ports/vscode/), [`web`](ports/web/),
-[`zsh`](ports/zsh/).
+[`limine`](ports/limine/), [`neovim`](ports/neovim/), [`termux`](ports/termux/),
+[`vscode`](ports/vscode/), [`web`](ports/web/), [`zsh`](ports/zsh/).
 
 ## License
 
