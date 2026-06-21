@@ -138,8 +138,9 @@ Generated from the same palette and usable, but not yet verified or documented
 with install steps, so expect rough edges and please report anything off:
 [`alacritty`](ports/alacritty/), [`base16`](ports/base16/),
 [`helix`](ports/helix/), [`iterm`](ports/iterm/), [`kitty`](ports/kitty/),
-[`limine`](ports/limine/), [`neovim`](ports/neovim/), [`termux`](ports/termux/),
-[`vscode`](ports/vscode/), [`web`](ports/web/), [`zsh`](ports/zsh/).
+[`limine`](ports/limine/), [`neovim`](ports/neovim/), [`starship`](ports/starship/),
+[`termux`](ports/termux/), [`vscode`](ports/vscode/), [`web`](ports/web/),
+[`zsh`](ports/zsh/).
 
 ## License
 

@@ -22,13 +22,14 @@ import * as limine from "./ports/limine.mjs";
 import * as kdePlasma from "./ports/kde-plasma.mjs";
 import * as notepadpp from "./ports/notepad-plus-plus.mjs";
 import * as zsh from "./ports/zsh.mjs";
+import * as starship from "./ports/starship.mjs";
 import * as ao3 from "./ports/ao3.mjs";
 import * as preview from "./preview.mjs";
 
 const DARK_PORTS = [
   zed, vscode, base16, windowsTerminal,
   iterm, alacritty, kitty, helix, neovim, firefox,
-  konsole, termux, limine, kdePlasma, notepadpp, zsh, ao3,
+  konsole, termux, limine, kdePlasma, notepadpp, zsh, starship, ao3,
   swatches,
 ];
 
