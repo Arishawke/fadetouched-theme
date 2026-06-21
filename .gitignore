@@ -9,11 +9,8 @@ Thumbs.db
 # logs
 npm-debug.log*
 
-# local-only docs and scratch (kept out of public artifacts)
+# local-only docs (kept out of public artifacts)
 docs/
-recycling-bin/
-HANDOFF.md
-*.handoff.md
 
 # vscode extension build output
 ports/vscode/*.vsix
@@ -21,12 +18,8 @@ ports/vscode/*.vsix
 # firefox extension build output
 ports/firefox/*.xpi
 
-# playwright mcp artifacts
-.playwright-mcp/
-
 # palette exploration scratch (throwaway, never committed)
 .preview-scratch/
-.superpowers/
 
 # dev-only apparatus, kept local (run the checks without publishing them)
 test/
