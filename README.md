@@ -130,6 +130,23 @@ to `%AppData%\Notepad++\themes\`, restart Notepad++, then pick **Fadetouched** i
 **Settings → Style Configurator**. Covers the editor UI and ~20 common languages;
 other languages use the default text color.
 
+### Trilium
+For the modern **Next** theme. Create a CSS code note, paste
+[`ports/trilium/fadetouched.css`](ports/trilium/fadetouched.css) into it, and add
+**two** owned attributes: `#appTheme=Fadetouched` and `#appThemeBase=next-dark`.
+Then pick **Fadetouched** under **Settings → Appearance → Theme** and reload with
+**Ctrl+Shift+R**. The `#appThemeBase=next-dark` attribute is required: without it
+only the background recolors. (TriliumNext's theme variables are beta and renamed
+often, so a future update may need a refresh.)
+
+### Calibre
+A dark palette for the calibre e-book manager's interface. In **Preferences →
+Interface → Look & feel → Adjust colors**, click **Import**, pick
+[`ports/calibre/Fadetouched.calibre-palette`](ports/calibre/Fadetouched.calibre-palette),
+set the mode dropdown to **Dark** (or **System** if your OS is dark), and click
+**OK**. Needs calibre 6.0+ (tested on 9.9). It themes dark mode only; in light
+mode calibre keeps its default palette.
+
 ### AO3 (Archive of Our Own)
 A dark site skin for the fanfiction archive. On AO3, go to your dashboard →
 **Skins → Create Site Skin**, paste the CSS from
@@ -161,15 +178,6 @@ with install steps, so expect rough edges and please report anything off:
 [`kitty`](ports/kitty/), [`limine`](ports/limine/), [`neovim`](ports/neovim/),
 [`termux`](ports/termux/), [`vscode`](ports/vscode/),
 [`web`](ports/web/), [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
-
-The [`trilium`](ports/trilium/) port targets the modern **Next** theme. Create a
-CSS code note, paste [`ports/trilium/fadetouched.css`](ports/trilium/fadetouched.css)
-into it, and add **two** owned attributes: `#appTheme=Fadetouched` and
-`#appThemeBase=next-dark`. Then pick **Fadetouched** under **Settings → Appearance
-→ Theme** and reload with **Ctrl+Shift+R**. The `#appThemeBase=next-dark`
-attribute is required: without it only the background recolors. (TriliumNext's
-theme variables are beta and renamed often, so a future update may need a
-refresh.)
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 (`config.json` + `stylesheet.qss`); package them into a `.qbtheme` with Qt's
