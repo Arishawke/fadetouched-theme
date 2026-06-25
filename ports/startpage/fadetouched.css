@@ -1,0 +1,153 @@
+/* Fadetouched for Startpage. Generated from palette.json. Do not edit by hand. */
+@-moz-document domain("startpage.com") {
+  :root {
+    --ft-bg: #11201e;
+    --ft-mantle: #091816;
+    --ft-crust: #03100f;
+    --ft-surface: #1f2d29;
+    --ft-border: #3e4945;
+    --ft-text: #dee1df;
+    --ft-text-muted: #b3b7b4;
+    --ft-text-subtle: #979d98;
+    --ft-accent: #96bb93;
+    --ft-link: #7daacf;
+    --ft-link-visited: #af90c3;
+    --ft-link-hover: #99c9c9;
+  }
+
+  :root {
+    --sx-accent: var(--ft-accent);
+    --sx-background: var(--ft-bg);
+    --sx-border: var(--ft-border);
+    --sx-tabLinkHover: var(--ft-link-hover);
+    --sx-foreground: var(--ft-text);
+    --sx-foregroundAlt: var(--ft-text-muted);
+    --sx-foregroundEmphasis: var(--ft-text);
+    --sx-popupBackground: var(--ft-surface);
+    --sx-popupForeground: var(--ft-text);
+    --sx-popupUrl: var(--ft-link);
+    --sx-buttonHighlight: var(--ft-accent);
+    --sx-loadingBars: var(--ft-mantle);
+    --sx-darkIcons: var(--ft-crust);
+    --footer-text: var(--ft-text);
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--ft-bg) !important;
+    color: var(--ft-text) !important;
+  }
+
+  header,
+  .header-inner-container,
+  .mobile-nav,
+  .top-nav-container,
+  .banner-container {
+    background: var(--ft-mantle) !important;
+    color: var(--ft-text) !important;
+  }
+  footer {
+    background: var(--ft-mantle) !important;
+  }
+  nav,
+  .inline-nav {
+    background: var(--ft-mantle) !important;
+    border-color: var(--ft-border) !important;
+  }
+
+  .search-form-container {
+    background: var(--ft-surface) !important;
+    border-color: var(--ft-border) !important;
+  }
+  .search-form-input,
+  input#q {
+    background: var(--ft-surface) !important;
+    color: var(--ft-text) !important;
+  }
+  .search-btn svg {
+    color: var(--ft-accent) !important;
+  }
+
+  .header-nav-item,
+  .header-nav-item-text {
+    color: var(--ft-text-muted) !important;
+  }
+
+  .w-gl-attribution {
+    color: var(--ft-text-subtle) !important;
+  }
+  .result {
+    background: transparent !important;
+    border-color: var(--ft-border) !important;
+  }
+  .wgl-title,
+  .result-title,
+  .result-link {
+    color: var(--ft-link) !important;
+  }
+  .wgl-site-title {
+    color: var(--ft-text-muted) !important;
+  }
+  .wgl-display-url,
+  .wgl-display-url .link-text {
+    color: var(--ft-accent) !important;
+  }
+  .description {
+    color: var(--ft-text) !important;
+  }
+  .anonymous-view-link-text,
+  .anonymous-view-link a {
+    color: var(--ft-link) !important;
+  }
+
+  a,
+  .link-text {
+    color: var(--ft-link) !important;
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: var(--ft-surface) !important;
+    color: var(--ft-text) !important;
+    border-color: var(--ft-border) !important;
+  }
+  button {
+    color: var(--ft-text) !important;
+  }
+
+  .hamburger-drawer,
+  .hamburger-drawer-content,
+  .dropdown-content,
+  .instruction-modal {
+    background: var(--ft-surface) !important;
+    color: var(--ft-text) !important;
+  }
+  .search-section-title,
+  .products-section-title,
+  .resources-section-title,
+  .hamburger-subsection-title {
+    color: var(--ft-text-muted) !important;
+  }
+
+  [data-testid="pagination-button"] {
+    background: var(--ft-surface) !important;
+    color: var(--ft-text) !important;
+    border-color: var(--ft-border) !important;
+  }
+
+  footer a:has(> svg) {
+    background: var(--ft-surface) !important;
+  }
+  footer a:has(> svg) svg {
+    fill: var(--ft-text) !important;
+  }
+
+  ::selection {
+    background: var(--ft-accent) !important;
+    color: var(--ft-bg) !important;
+  }
+}

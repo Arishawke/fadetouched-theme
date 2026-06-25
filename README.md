@@ -138,6 +138,15 @@ create it. Then click **Use** on the skin (or set it as your default under
 **Preferences**). Site skins apply only while you're logged in; re-paste the CSS
 after any update.
 
+### Startpage
+A dark userstyle for the [startpage.com](https://www.startpage.com) search
+engine. Install the [Stylus](https://add0n.com/stylus.html) browser extension,
+create a new style, paste the CSS from
+[`ports/startpage/fadetouched.css`](ports/startpage/fadetouched.css), and save.
+It is scoped to `startpage.com` via `@-moz-document`. Modeled on the Catppuccin
+userstyle; like any site userstyle it can break when the site is redesigned, so
+report anything that looks off.
+
 ### Cursor
 A dark cursor set based on Bibata Modern, with a custom green "veilfire" ring
 spinner for the busy and progress cursors. Prebuilt Windows and Linux (XCursor)

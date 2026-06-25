@@ -28,13 +28,14 @@ import * as ghostty from "./ports/ghostty.mjs";
 import * as wezterm from "./ports/wezterm.mjs";
 import * as trilium from "./ports/trilium.mjs";
 import * as qbittorrent from "./ports/qbittorrent.mjs";
+import * as startpage from "./ports/startpage.mjs";
 import * as preview from "./preview.mjs";
 
 const DARK_PORTS = [
   zed, vscode, base16, windowsTerminal,
   iterm, alacritty, kitty, helix, neovim, firefox,
   konsole, termux, limine, kdePlasma, notepadpp, zsh, starship, ao3,
-  ghostty, wezterm, trilium, qbittorrent,
+  ghostty, wezterm, trilium, qbittorrent, startpage,
   swatches,
 ];
 
