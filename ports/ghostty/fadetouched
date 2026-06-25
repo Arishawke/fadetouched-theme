@@ -1,0 +1,25 @@
+# Fadetouched. Generated from palette.json. Do not edit by hand.
+
+background = #11201e
+foreground = #dee1df
+cursor-color = #dbb5c1
+cursor-text = #11201e
+selection-background = #505a56
+selection-foreground = #dee1df
+
+palette = 0=#2e3a36
+palette = 1=#c87a75
+palette = 2=#96bb93
+palette = 3=#d7be86
+palette = 4=#7daacf
+palette = 5=#c593af
+palette = 6=#81b8a8
+palette = 7=#979d98
+palette = 8=#3e4945
+palette = 9=#da8681
+palette = 10=#a5cda2
+palette = 11=#ebd094
+palette = 12=#8abae2
+palette = 13=#d7a1c0
+palette = 14=#8ec9b8
+palette = 15=#b3b7b4

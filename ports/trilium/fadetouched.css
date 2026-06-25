@@ -1,0 +1,66 @@
+/* Fadetouched. Generated from palette.json. Do not edit by hand. */
+/* TriliumNext Next theme. Note attributes: #appTheme=Fadetouched #appThemeBase=next-dark */
+body {
+  --theme-style: dark;
+  --mermaid-theme: dark;
+  --main-background-color: #11201e !important;
+  --main-text-color: #dee1df !important;
+  --main-border-color: #3e4945 !important;
+  --second-border-color: #505a56 !important;
+  --bs-border-color: #3e4945 !important;
+  --gutter-color: #1f2d29;
+  --accented-background-color: #2e3a36 !important;
+  --more-accented-background-color: #2e3a36;
+  --button-background-color: transparent;
+  --button-border-color: #3e4945;
+  --button-text-color: currentColor;
+  --button-disabled-text-color: #666f6b;
+  --primary-button-background-color: #96bb934d;
+  --primary-button-text-color: #dee1df;
+  --primary-button-border-color: transparent;
+  --muted-text-color: #b3b7b4;
+  --input-text-color: #dee1df;
+  --input-background-color: #1f2d29;
+  --input-hover-background: #2e3a36 !important;
+  --input-focus-background: #2e3a36 !important;
+  --input-focus-outline-color: #96bb93;
+  --hover-item-text-color: #dee1df;
+  --hover-item-background-color: #2e3a36;
+  --hover-item-border-color: #3e4945;
+  --active-item-text-color: #dee1df;
+  --active-item-background-color: #96bb9333;
+  --active-item-border-color: transparent;
+  --menu-text-color: #dee1df;
+  --menu-background-color: #1f2d29;
+  --tooltip-background-color: #1f2d29;
+  --modal-background-color: #1f2d29;
+  --modal-backdrop-color: #03100fcc;
+  --dropdown-border-color: #505a56;
+  --left-pane-background-color: #091816 !important;
+  --left-pane-text-color: #b3b7b4 !important;
+  --left-pane-item-action-button-background: #3e4945 !important;
+  --left-pane-item-action-button-color: #dee1df !important;
+  --right-pane-li-hover-background: #2e3a36;
+  --launcher-pane-background-color: #03100f !important;
+  --launcher-pane-text-color: #979d98 !important;
+  --new-tab-button-color: #979d98;
+  --new-tab-button-hover-background: #2e3a36;
+  --new-tab-button-hover-color: #dee1df;
+  --tab-close-button-hover-background: #c87a75;
+  --tab-close-button-hover-color: #dee1df;
+  --active-tab-background-color: #1f2d29;
+  --active-tab-hover-background-color: #1f2d29;
+  --active-tab-text-color: #dee1df;
+  --inactive-tab-background-color: transparent;
+  --inactive-tab-hover-background-color: #1f2d29;
+  --inactive-tab-text-color: #979d98;
+  --scrollbar-thumb-color: #3e4945;
+  --scrollbar-thumb-hover-color: #505a56;
+  --scrollbar-background-color: #091816;
+  --link-color: #7daacf;
+}
+
+::-webkit-scrollbar-thumb { background-color: #3e4945 !important; border-color: #1f2d29 !important; }
+::selection { background-color: #7daacf55; }
+a { color: var(--link-color); }
+span.fancytree-title { color: var(--main-text-color) !important; }

@@ -1,0 +1,14 @@
+# Fadetouched. Generated from palette.json. Do not edit by hand.
+[colors]
+foreground = "#dee1df"
+background = "#11201e"
+cursor_bg = "#dbb5c1"
+cursor_fg = "#11201e"
+cursor_border = "#dbb5c1"
+selection_bg = "#505a56"
+selection_fg = "#dee1df"
+ansi = ["#2e3a36", "#c87a75", "#96bb93", "#d7be86", "#7daacf", "#c593af", "#81b8a8", "#979d98"]
+brights = ["#3e4945", "#da8681", "#a5cda2", "#ebd094", "#8abae2", "#d7a1c0", "#8ec9b8", "#b3b7b4"]
+
+[metadata]
+name = "Fadetouched"

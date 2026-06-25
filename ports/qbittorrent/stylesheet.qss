@@ -1,0 +1,16 @@
+/* Fadetouched. Generated from palette.json. Do not edit by hand. */
+QWidget { background-color: #11201e; color: #dee1df; }
+QMenuBar, QToolBar, QStatusBar { background-color: #091816; border: none; }
+QMenu { background-color: #1f2d29; border: 1px solid #3e4945; }
+QMenu::item:selected { background-color: #2e3a36; }
+QHeaderView::section { background-color: #1f2d29; color: #b3b7b4; border: none; padding: 4px; }
+QLineEdit, QComboBox, QAbstractSpinBox, QPlainTextEdit, QTextEdit {
+  background-color: #091816; color: #dee1df; border: 1px solid #3e4945; }
+QPushButton { background-color: #1f2d29; color: #dee1df; border: 1px solid #3e4945; padding: 4px 12px; }
+QPushButton:hover { background-color: #2e3a36; }
+QPushButton:pressed { background-color: #3e4945; }
+QTabBar::tab { background-color: #11201e; color: #b3b7b4; padding: 5px 10px; }
+QTabBar::tab:selected { background-color: #1f2d29; color: #dee1df; }
+QScrollBar:vertical, QScrollBar:horizontal { background-color: #091816; border: none; }
+QScrollBar::handle { background-color: #3e4945; border-radius: 3px; }
+QScrollBar::handle:hover { background-color: #505a56; }

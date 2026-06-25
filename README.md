@@ -148,9 +148,25 @@ GPL-3.0 part of the project (it derives from Bibata); see License below.
 Generated from the same palette and usable, but not yet verified or documented
 with install steps, so expect rough edges and please report anything off:
 [`alacritty`](ports/alacritty/), [`base16`](ports/base16/),
-[`helix`](ports/helix/), [`iterm`](ports/iterm/), [`kitty`](ports/kitty/),
-[`limine`](ports/limine/), [`neovim`](ports/neovim/), [`termux`](ports/termux/),
-[`vscode`](ports/vscode/), [`web`](ports/web/), [`zsh`](ports/zsh/).
+[`ghostty`](ports/ghostty/), [`helix`](ports/helix/), [`iterm`](ports/iterm/),
+[`kitty`](ports/kitty/), [`limine`](ports/limine/), [`neovim`](ports/neovim/),
+[`termux`](ports/termux/), [`vscode`](ports/vscode/),
+[`web`](ports/web/), [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
+
+The [`trilium`](ports/trilium/) port targets the modern **Next** theme. Create a
+CSS code note, paste [`ports/trilium/fadetouched.css`](ports/trilium/fadetouched.css)
+into it, and add **two** owned attributes: `#appTheme=Fadetouched` and
+`#appThemeBase=next-dark`. Then pick **Fadetouched** under **Settings → Appearance
+→ Theme** and reload with **Ctrl+Shift+R**. The `#appThemeBase=next-dark`
+attribute is required: without it only the background recolors. (TriliumNext's
+theme variables are beta and renamed often, so a future update may need a
+refresh.)
+
+The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
+(`config.json` + `stylesheet.qss`); package them into a `.qbtheme` with Qt's
+`rcc` (`rcc -binary -o fadetouched.qbtheme resources.qrc`, Qt6 for qBittorrent
+4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
+theme** and restart.
 
 ## License
 
