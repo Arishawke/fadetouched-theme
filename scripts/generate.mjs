@@ -31,13 +31,14 @@ import * as qbittorrent from "./ports/qbittorrent.mjs";
 import * as startpage from "./ports/startpage.mjs";
 import * as calibre from "./ports/calibre.mjs";
 import * as obsidian from "./ports/obsidian.mjs";
+import * as feishin from "./ports/feishin.mjs";
 import * as preview from "./preview.mjs";
 
 const DARK_PORTS = [
   zed, vscode, base16, windowsTerminal,
   iterm, alacritty, kitty, helix, neovim, firefox,
   konsole, termux, limine, kdePlasma, notepadpp, zsh, starship, ao3,
-  ghostty, wezterm, trilium, qbittorrent, startpage, calibre, obsidian,
+  ghostty, wezterm, trilium, qbittorrent, startpage, calibre, obsidian, feishin,
   swatches,
 ];
 

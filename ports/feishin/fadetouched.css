@@ -1,0 +1,18 @@
+/* Fadetouched for Feishin. Generated from palette.json. Do not edit by hand. */
+/* Settings -> Advanced -> Custom CSS: enable, Edit, paste, Save. Select a dark base theme (e.g. Default Dark) first. */
+:root {
+  --theme-colors-background: #11201e !important;
+  --theme-colors-background-alternate: #091816 !important;
+  --theme-colors-foreground: #dee1df !important;
+  --theme-colors-foreground-muted: #979d98 !important;
+  --theme-colors-surface: #1f2d29 !important;
+  --theme-colors-surface-foreground: #b3b7b4 !important;
+  --theme-colors-primary: #96bb93 !important;
+  --theme-colors-state-error: #c87a75 !important;
+  --theme-colors-state-info: #81b8a8 !important;
+  --theme-colors-state-success: #96bb93 !important;
+  --theme-colors-state-warning: #d7be86 !important;
+  --theme-scrollbar-handle-background: #3e49454d !important;
+  --theme-scrollbar-handle-hover-background: #505a5680 !important;
+  --theme-scrollbar-handle-active-background: #505a56b3 !important;
+}
