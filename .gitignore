@@ -25,6 +25,3 @@ ports/firefox/*.xpi
 test/
 .github/workflows/
 scripts/contrast.mjs
-
-# changelog kept local for now (not published)
-CHANGELOG.md
