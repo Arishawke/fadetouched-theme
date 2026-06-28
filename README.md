@@ -124,6 +124,17 @@ Needs a [Nerd Font](https://www.nerdfonts.com/) for the powerline separators and
 language icons. To keep it as a separate file instead of your main config, point
 the `STARSHIP_CONFIG` environment variable at it instead.
 
+### PowerShell
+Colors the command line (PSReadLine syntax highlighting) as you type. Dot-source
+[`ports/powershell/fadetouched.ps1`](ports/powershell/fadetouched.ps1) from your
+`$PROFILE`:
+```powershell
+. "path\to\fadetouched.ps1"
+```
+Open a new session (or run `. $PROFILE`) to apply. Uses PSReadLine (bundled with
+PowerShell 5.1+ and 7+). It only colors typed input, so it sits alongside a prompt
+like Starship.
+
 ### Notepad++
 Copy [`ports/notepad-plus-plus/Fadetouched.xml`](ports/notepad-plus-plus/Fadetouched.xml)
 to `%AppData%\Notepad++\themes\`, restart Notepad++, then pick **Fadetouched** in
@@ -192,8 +203,8 @@ with install steps, so expect rough edges and please report anything off:
 [`alacritty`](ports/alacritty/), [`base16`](ports/base16/), [`fish`](ports/fish/),
 [`ghostty`](ports/ghostty/), [`helix`](ports/helix/), [`iterm`](ports/iterm/),
 [`kitty`](ports/kitty/), [`limine`](ports/limine/), [`neovim`](ports/neovim/),
-[`nushell`](ports/nushell/), [`powershell`](ports/powershell/),
-[`termux`](ports/termux/), [`vscode`](ports/vscode/), [`web`](ports/web/),
+[`nushell`](ports/nushell/), [`termux`](ports/termux/), [`vscode`](ports/vscode/),
+[`web`](ports/web/),
 [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
@@ -202,14 +213,12 @@ The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
 theme** and restart.
 
-The shell ports color command-line syntax highlighting. **fish**: copy
-[`ports/fish/Fadetouched.theme`](ports/fish/Fadetouched.theme) to
+The fish and Nushell shell ports color command-line syntax highlighting.
+**fish**: copy [`ports/fish/Fadetouched.theme`](ports/fish/Fadetouched.theme) to
 `~/.config/fish/themes/`, then run `fish_config theme choose Fadetouched` followed
 by `fish_config theme save`. **Nushell**: `source` the
 [`ports/nushell/fadetouched.nu`](ports/nushell/fadetouched.nu) file from your
-`config.nu` (or paste its contents in before `let config`). **PowerShell**:
-dot-source [`ports/powershell/fadetouched.ps1`](ports/powershell/fadetouched.ps1)
-from your `$PROFILE` (uses PSReadLine, bundled with PowerShell 5.1+).
+`config.nu` (or paste its contents in before `let config`).
 
 ## License
 
