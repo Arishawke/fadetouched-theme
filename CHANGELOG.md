@@ -35,6 +35,9 @@ All notable changes to Fadetouched are documented here. The format follows
   `palette.json` (previously hand-maintained), so colors live in one place.
 
 ### Added
+- Feishin port (`ports/feishin/fadetouched.css`): a dark custom-CSS theme for the
+  Feishin music player, remapping its `--theme-colors-*` and scrollbar variables.
+  Paste into Settings → Advanced → Custom CSS over a dark base theme.
 - Obsidian port (`ports/obsidian/`): a dark theme generated from `palette.json`.
   Remaps Obsidian's foundation tokens (base ramp, named colors, accent HSL) plus
   code/syntax and a few targeted vars, scoped to `.theme-dark`. Install by copying
