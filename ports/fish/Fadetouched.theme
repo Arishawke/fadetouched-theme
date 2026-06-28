@@ -1,0 +1,30 @@
+# name: 'Fadetouched'
+# url: 'https://github.com/Arishawke/fadetouched-theme'
+
+# preferred_background: 11201e
+fish_color_normal dee1df
+fish_color_command 7daacf
+fish_color_keyword af90c3
+fish_color_quote 96bb93
+fish_color_redirection 99c9c9
+fish_color_end d7a176
+fish_color_error c87a75
+fish_color_param bc836c
+fish_color_option 81b8a8
+fish_color_comment 666f6b
+fish_color_selection --background=2e3a36
+fish_color_search_match --background=3e4945
+fish_color_operator 99c9c9
+fish_color_escape c593af
+fish_color_autosuggestion 666f6b
+fish_color_cancel c87a75
+fish_color_cwd 7daacf
+fish_color_user 81b8a8
+fish_color_host 7daacf
+fish_color_host_remote 96bb93
+fish_color_status c87a75
+fish_color_gray 666f6b
+fish_pager_color_progress 666f6b
+fish_pager_color_prefix dbb5c1
+fish_pager_color_completion dee1df
+fish_pager_color_description 666f6b

@@ -32,6 +32,9 @@ import * as startpage from "./ports/startpage.mjs";
 import * as calibre from "./ports/calibre.mjs";
 import * as obsidian from "./ports/obsidian.mjs";
 import * as feishin from "./ports/feishin.mjs";
+import * as fish from "./ports/fish.mjs";
+import * as nushell from "./ports/nushell.mjs";
+import * as powershell from "./ports/powershell.mjs";
 import * as preview from "./preview.mjs";
 
 const DARK_PORTS = [
@@ -39,6 +42,7 @@ const DARK_PORTS = [
   iterm, alacritty, kitty, helix, neovim, firefox,
   konsole, termux, limine, kdePlasma, notepadpp, zsh, starship, ao3,
   ghostty, wezterm, trilium, qbittorrent, startpage, calibre, obsidian, feishin,
+  fish, nushell, powershell,
   swatches,
 ];
 
