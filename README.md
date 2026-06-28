@@ -189,17 +189,27 @@ GPL-3.0 part of the project (it derives from Bibata); see License below.
 ### In testing
 Generated from the same palette and usable, but not yet verified or documented
 with install steps, so expect rough edges and please report anything off:
-[`alacritty`](ports/alacritty/), [`base16`](ports/base16/),
+[`alacritty`](ports/alacritty/), [`base16`](ports/base16/), [`fish`](ports/fish/),
 [`ghostty`](ports/ghostty/), [`helix`](ports/helix/), [`iterm`](ports/iterm/),
 [`kitty`](ports/kitty/), [`limine`](ports/limine/), [`neovim`](ports/neovim/),
-[`termux`](ports/termux/), [`vscode`](ports/vscode/),
-[`web`](ports/web/), [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
+[`nushell`](ports/nushell/), [`powershell`](ports/powershell/),
+[`termux`](ports/termux/), [`vscode`](ports/vscode/), [`web`](ports/web/),
+[`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 (`config.json` + `stylesheet.qss`); package them into a `.qbtheme` with Qt's
 `rcc` (`rcc -binary -o fadetouched.qbtheme resources.qrc`, Qt6 for qBittorrent
 4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
 theme** and restart.
+
+The shell ports color command-line syntax highlighting. **fish**: copy
+[`ports/fish/Fadetouched.theme`](ports/fish/Fadetouched.theme) to
+`~/.config/fish/themes/`, then run `fish_config theme choose Fadetouched` followed
+by `fish_config theme save`. **Nushell**: `source` the
+[`ports/nushell/fadetouched.nu`](ports/nushell/fadetouched.nu) file from your
+`config.nu` (or paste its contents in before `let config`). **PowerShell**:
+dot-source [`ports/powershell/fadetouched.ps1`](ports/powershell/fadetouched.ps1)
+from your `$PROFILE` (uses PSReadLine, bundled with PowerShell 5.1+).
 
 ## License
 

@@ -35,6 +35,10 @@ All notable changes to Fadetouched are documented here. The format follows
   `palette.json` (previously hand-maintained), so colors live in one place.
 
 ### Added
+- fish, Nushell, and PowerShell ports: shell syntax-highlighting themes generated
+  from `palette.json`. fish ships a `.theme` for `fish_config`, Nushell a
+  `$env.config.color_config` snippet, and PowerShell a `Set-PSReadLineOption`
+  snippet for `$PROFILE`.
 - Feishin port (`ports/feishin/fadetouched.css`): a dark custom-CSS theme for the
   Feishin music player, remapping its `--theme-colors-*` and scrollbar variables.
   Paste into Settings → Advanced → Custom CSS over a dark base theme.
