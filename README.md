@@ -176,7 +176,7 @@ with install steps, so expect rough edges and please report anything off:
 [`alacritty`](ports/alacritty/), [`base16`](ports/base16/),
 [`ghostty`](ports/ghostty/), [`helix`](ports/helix/), [`iterm`](ports/iterm/),
 [`kitty`](ports/kitty/), [`limine`](ports/limine/), [`neovim`](ports/neovim/),
-[`termux`](ports/termux/), [`vscode`](ports/vscode/),
+[`obsidian`](ports/obsidian/), [`termux`](ports/termux/), [`vscode`](ports/vscode/),
 [`web`](ports/web/), [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
@@ -184,6 +184,12 @@ The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 `rcc` (`rcc -binary -o fadetouched.qbtheme resources.qrc`, Qt6 for qBittorrent
 4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
 theme** and restart.
+
+The [`obsidian`](ports/obsidian/) port ships a `theme.css` + `manifest.json`.
+Copy the `ports/obsidian/` folder into your vault as
+`<vault>/.obsidian/themes/Fadetouched/`, then enable it under **Appearance →
+Themes → Fadetouched**. Dark-only: in Obsidian's light mode it falls back to the
+default palette.
 
 ## License
 
