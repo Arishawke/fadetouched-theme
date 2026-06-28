@@ -155,6 +155,14 @@ set the mode dropdown to **Dark** (or **System** if your OS is dark), and click
 **OK**. Needs calibre 6.0+ (tested on 9.9). It themes dark mode only; in light
 mode calibre keeps its default palette.
 
+### Feishin
+A dark theme for the [Feishin](https://github.com/jeffvli/feishin) music player. In
+**Settings → Advanced → Custom CSS**, enable it, click **Edit**, paste
+[`ports/feishin/fadetouched.css`](ports/feishin/fadetouched.css), and **Save**.
+Select a dark base theme (e.g. Default Dark) first; the theme only overrides colors
+and relies on the base theme for dark mode. As with Feishin's own themes, a few
+Mantine controls keep their default shade.
+
 ### AO3 (Archive of Our Own)
 A dark site skin for the fanfiction archive. On AO3, go to your dashboard →
 **Skins → Create Site Skin**, paste the CSS from
@@ -181,7 +189,7 @@ GPL-3.0 part of the project (it derives from Bibata); see License below.
 ### In testing
 Generated from the same palette and usable, but not yet verified or documented
 with install steps, so expect rough edges and please report anything off:
-[`alacritty`](ports/alacritty/), [`base16`](ports/base16/), [`feishin`](ports/feishin/),
+[`alacritty`](ports/alacritty/), [`base16`](ports/base16/),
 [`ghostty`](ports/ghostty/), [`helix`](ports/helix/), [`iterm`](ports/iterm/),
 [`kitty`](ports/kitty/), [`limine`](ports/limine/), [`neovim`](ports/neovim/),
 [`termux`](ports/termux/), [`vscode`](ports/vscode/),
@@ -192,11 +200,6 @@ The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 `rcc` (`rcc -binary -o fadetouched.qbtheme resources.qrc`, Qt6 for qBittorrent
 4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
 theme** and restart.
-
-The [`feishin`](ports/feishin/) port is a custom-CSS theme for the Feishin music
-player. In **Settings → Advanced → Custom CSS**, enable it, click **Edit**, paste
-[`ports/feishin/fadetouched.css`](ports/feishin/fadetouched.css), and **Save**.
-Select a dark base theme (e.g. Default Dark) first; the CSS only overrides colors.
 
 ## License
 
