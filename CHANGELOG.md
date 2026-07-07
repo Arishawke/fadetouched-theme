@@ -35,6 +35,10 @@ All notable changes to Fadetouched are documented here. The format follows
   `palette.json` (previously hand-maintained), so colors live in one place.
 
 ### Added
+- Opencode port: a generated, in-testing terminal UI theme at
+  `ports/opencode/fadetouched.json`, following Opencode's public
+  `https://opencode.ai/theme.json` schema. Install by copying it to
+  `~/.config/opencode/themes/` and selecting `fadetouched` with `/theme`.
 - tmux, Foot, and Mintty ports: lightweight, unverified config snippets generated
   from `palette.json`. tmux styles the status/message/pane UI, Foot emits a
   `[colors]` include with bare hex colors, and Mintty emits a theme file with

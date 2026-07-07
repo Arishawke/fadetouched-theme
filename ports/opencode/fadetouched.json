@@ -1,0 +1,231 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "ftAccent": "#96bb93",
+    "ftPink": "#dbb5c1",
+    "ftRed": "#c87a75",
+    "ftOrange": "#d7a176",
+    "ftYellow": "#d7be86",
+    "ftGreen": "#96bb93",
+    "ftTeal": "#81b8a8",
+    "ftCyan": "#99c9c9",
+    "ftBlue": "#7daacf",
+    "ftPurple": "#af90c3",
+    "ftText": "#dee1df",
+    "ftTextMuted": "#b3b7b4",
+    "ftTextSubtle": "#979d98",
+    "ftBase": "#11201e",
+    "ftPanel": "#091816",
+    "ftElement": "#03100f",
+    "ftSurface": "#1f2d29",
+    "ftBorder": "#3e4945",
+    "ftBorderActive": "#505a56",
+    "ftBorderSubtle": "#2e3a36",
+    "ftDiffAddedBg": "#96bb9380",
+    "ftDiffRemovedBg": "#c87a7580",
+    "ftDiffAddedLineBg": "#96bb9340",
+    "ftDiffRemovedLineBg": "#c87a7540"
+  },
+  "theme": {
+    "primary": {
+      "dark": "ftAccent",
+      "light": "ftAccent"
+    },
+    "secondary": {
+      "dark": "ftAccent",
+      "light": "ftAccent"
+    },
+    "accent": {
+      "dark": "ftPink",
+      "light": "ftPink"
+    },
+    "error": {
+      "dark": "ftRed",
+      "light": "ftRed"
+    },
+    "warning": {
+      "dark": "ftYellow",
+      "light": "ftYellow"
+    },
+    "success": {
+      "dark": "ftGreen",
+      "light": "ftGreen"
+    },
+    "info": {
+      "dark": "ftTeal",
+      "light": "ftTeal"
+    },
+    "text": {
+      "dark": "ftText",
+      "light": "ftText"
+    },
+    "textMuted": {
+      "dark": "ftTextMuted",
+      "light": "ftTextMuted"
+    },
+    "background": {
+      "dark": "ftBase",
+      "light": "ftBase"
+    },
+    "backgroundPanel": {
+      "dark": "ftPanel",
+      "light": "ftPanel"
+    },
+    "backgroundElement": {
+      "dark": "ftElement",
+      "light": "ftElement"
+    },
+    "border": {
+      "dark": "ftBorder",
+      "light": "ftBorder"
+    },
+    "borderActive": {
+      "dark": "ftBorderActive",
+      "light": "ftBorderActive"
+    },
+    "borderSubtle": {
+      "dark": "ftBorderSubtle",
+      "light": "ftBorderSubtle"
+    },
+    "diffAdded": {
+      "dark": "ftGreen",
+      "light": "ftGreen"
+    },
+    "diffRemoved": {
+      "dark": "ftRed",
+      "light": "ftRed"
+    },
+    "diffContext": {
+      "dark": "ftTextSubtle",
+      "light": "ftTextSubtle"
+    },
+    "diffHunkHeader": {
+      "dark": "ftOrange",
+      "light": "ftOrange"
+    },
+    "diffHighlightAdded": {
+      "dark": "ftGreen",
+      "light": "ftGreen"
+    },
+    "diffHighlightRemoved": {
+      "dark": "ftRed",
+      "light": "ftRed"
+    },
+    "diffAddedBg": {
+      "dark": "ftDiffAddedBg",
+      "light": "ftDiffAddedBg"
+    },
+    "diffRemovedBg": {
+      "dark": "ftDiffRemovedBg",
+      "light": "ftDiffRemovedBg"
+    },
+    "diffContextBg": {
+      "dark": "ftPanel",
+      "light": "ftPanel"
+    },
+    "diffLineNumber": {
+      "dark": "ftBorderActive",
+      "light": "ftBorderActive"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "ftDiffAddedLineBg",
+      "light": "ftDiffAddedLineBg"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "ftDiffRemovedLineBg",
+      "light": "ftDiffRemovedLineBg"
+    },
+    "markdownText": {
+      "dark": "ftText",
+      "light": "ftText"
+    },
+    "markdownHeading": {
+      "dark": "ftAccent",
+      "light": "ftAccent"
+    },
+    "markdownLink": {
+      "dark": "ftBlue",
+      "light": "ftBlue"
+    },
+    "markdownLinkText": {
+      "dark": "ftCyan",
+      "light": "ftCyan"
+    },
+    "markdownCode": {
+      "dark": "ftGreen",
+      "light": "ftGreen"
+    },
+    "markdownBlockQuote": {
+      "dark": "ftYellow",
+      "light": "ftYellow"
+    },
+    "markdownEmph": {
+      "dark": "ftYellow",
+      "light": "ftYellow"
+    },
+    "markdownStrong": {
+      "dark": "ftOrange",
+      "light": "ftOrange"
+    },
+    "markdownHorizontalRule": {
+      "dark": "ftTextSubtle",
+      "light": "ftTextSubtle"
+    },
+    "markdownListItem": {
+      "dark": "ftBlue",
+      "light": "ftBlue"
+    },
+    "markdownListEnumeration": {
+      "dark": "ftCyan",
+      "light": "ftCyan"
+    },
+    "markdownImage": {
+      "dark": "ftBlue",
+      "light": "ftBlue"
+    },
+    "markdownImageText": {
+      "dark": "ftCyan",
+      "light": "ftCyan"
+    },
+    "markdownCodeBlock": {
+      "dark": "ftText",
+      "light": "ftText"
+    },
+    "syntaxComment": {
+      "dark": "#666f6b",
+      "light": "#666f6b"
+    },
+    "syntaxKeyword": {
+      "dark": "#af90c3",
+      "light": "#af90c3"
+    },
+    "syntaxFunction": {
+      "dark": "#7daacf",
+      "light": "#7daacf"
+    },
+    "syntaxVariable": {
+      "dark": "ftText",
+      "light": "ftText"
+    },
+    "syntaxString": {
+      "dark": "#96bb93",
+      "light": "#96bb93"
+    },
+    "syntaxNumber": {
+      "dark": "#d7a176",
+      "light": "#d7a176"
+    },
+    "syntaxType": {
+      "dark": "#d7be86",
+      "light": "#d7be86"
+    },
+    "syntaxOperator": {
+      "dark": "#99c9c9",
+      "light": "#99c9c9"
+    },
+    "syntaxPunctuation": {
+      "dark": "#979d98",
+      "light": "#979d98"
+    }
+  }
+}

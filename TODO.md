@@ -37,6 +37,7 @@
 - [ ] Foot (unverified - generated plain color include)
 - [ ] Mintty (unverified - generated theme file)
 - [ ] nushell (unverified - no nushell on this machine; `.nu` file not validated)
+- [ ] Opencode (unverified - generated terminal UI theme, Opencode not installed locally)
 - [ ] tmux (unverified - generated sourceable status snippet)
 
 ## Queued

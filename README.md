@@ -204,8 +204,8 @@ install notes below; expect rough edges and please report anything off:
 [`fish`](ports/fish/), [`foot`](ports/foot/), [`ghostty`](ports/ghostty/), [`helix`](ports/helix/),
 [`iterm`](ports/iterm/), [`kitty`](ports/kitty/), [`limine`](ports/limine/),
 [`mintty`](ports/mintty/), [`neovim`](ports/neovim/), [`nushell`](ports/nushell/),
-[`termux`](ports/termux/), [`tmux`](ports/tmux/), [`vscode`](ports/vscode/), [`web`](ports/web/),
-[`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
+[`opencode`](ports/opencode/), [`termux`](ports/termux/), [`tmux`](ports/tmux/),
+[`vscode`](ports/vscode/), [`web`](ports/web/), [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 (`config.json` + `stylesheet.qss`); package them into a `.qbtheme` with Qt's
@@ -220,6 +220,17 @@ Import**, then paste the contents of
 [`ports/codex/fadetouched.codex-theme`](ports/codex/fadetouched.codex-theme).
 It maps Codex's accent, surface, ink, diff, and skill colors directly to
 Fadetouched palette tokens.
+
+The [`opencode`](ports/opencode/) port is a terminal UI theme for Opencode. Copy
+[`ports/opencode/fadetouched.json`](ports/opencode/fadetouched.json) into
+Opencode's user theme directory:
+```sh
+mkdir -p ~/.config/opencode/themes
+cp ports/opencode/fadetouched.json ~/.config/opencode/themes/
+```
+Then select `fadetouched` with `/theme`, or set `"theme": "fadetouched"` in
+`~/.config/opencode/tui.json`. Needs a truecolor terminal. It stays in testing
+until visually verified in Opencode.
 
 The fish and Nushell shell ports color command-line syntax highlighting.
 **fish**: copy [`ports/fish/Fadetouched.theme`](ports/fish/Fadetouched.theme) to
