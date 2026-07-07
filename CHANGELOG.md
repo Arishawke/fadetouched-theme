@@ -35,6 +35,10 @@ All notable changes to Fadetouched are documented here. The format follows
   `palette.json` (previously hand-maintained), so colors live in one place.
 
 ### Added
+- tmux, Foot, and Mintty ports: lightweight, unverified config snippets generated
+  from `palette.json`. tmux styles the status/message/pane UI, Foot emits a
+  `[colors]` include with bare hex colors, and Mintty emits a theme file with
+  decimal RGB color keys.
 - fish, Nushell, and PowerShell ports: shell syntax-highlighting themes generated
   from `palette.json`. fish ships a `.theme` for `fish_config`, Nushell a
   `$env.config.color_config` snippet, and PowerShell a `Set-PSReadLineOption`

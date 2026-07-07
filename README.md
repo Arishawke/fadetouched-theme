@@ -198,13 +198,13 @@ packs and install steps are in [`ports/cursor/`](ports/cursor/). This is the one
 GPL-3.0 part of the project (it derives from Bibata); see License below.
 
 ### In testing
-Generated from the same palette and usable, but not yet verified or documented
-with install steps, so expect rough edges and please report anything off:
-[`alacritty`](ports/alacritty/), [`base16`](ports/base16/), [`fish`](ports/fish/),
-[`ghostty`](ports/ghostty/), [`helix`](ports/helix/), [`iterm`](ports/iterm/),
-[`kitty`](ports/kitty/), [`limine`](ports/limine/), [`neovim`](ports/neovim/),
-[`nushell`](ports/nushell/), [`termux`](ports/termux/), [`vscode`](ports/vscode/),
-[`web`](ports/web/),
+Generated from the same palette and usable, but not yet verified. Some have
+install notes below; expect rough edges and please report anything off:
+[`alacritty`](ports/alacritty/), [`base16`](ports/base16/), [`codex`](ports/codex/),
+[`fish`](ports/fish/), [`foot`](ports/foot/), [`ghostty`](ports/ghostty/), [`helix`](ports/helix/),
+[`iterm`](ports/iterm/), [`kitty`](ports/kitty/), [`limine`](ports/limine/),
+[`mintty`](ports/mintty/), [`neovim`](ports/neovim/), [`nushell`](ports/nushell/),
+[`termux`](ports/termux/), [`tmux`](ports/tmux/), [`vscode`](ports/vscode/), [`web`](ports/web/),
 [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
@@ -213,12 +213,28 @@ The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
 theme** and restart.
 
+The [`codex`](ports/codex/) port is for the Codex Desktop App. It ships the
+`codex-theme-v1:` theme string Codex appears to require, plus a readable JSON
+companion for review. To apply it, open Codex, go to **Settings → Appearance →
+Import**, then paste the contents of
+[`ports/codex/fadetouched.codex-theme`](ports/codex/fadetouched.codex-theme).
+It maps Codex's accent, surface, ink, diff, and skill colors directly to
+Fadetouched palette tokens.
+
 The fish and Nushell shell ports color command-line syntax highlighting.
 **fish**: copy [`ports/fish/Fadetouched.theme`](ports/fish/Fadetouched.theme) to
 `~/.config/fish/themes/`, then run `fish_config theme choose Fadetouched` followed
 by `fish_config theme save`. **Nushell**: `source` the
 [`ports/nushell/fadetouched.nu`](ports/nushell/fadetouched.nu) file from your
 `config.nu` (or paste its contents in before `let config`).
+
+The tmux, Foot, and Mintty ports are plain color snippets. **tmux**: `source-file`
+[`ports/tmux/fadetouched.tmux`](ports/tmux/fadetouched.tmux) from `~/.tmux.conf`.
+**Foot**: copy the `[colors]` block from
+[`ports/foot/fadetouched.ini`](ports/foot/fadetouched.ini) into `foot.ini`.
+**Mintty**: copy [`ports/mintty/fadetouched.minttyrc`](ports/mintty/fadetouched.minttyrc)
+to a Mintty `themes` resource folder, then select it from the Looks theme picker
+or set it with `ThemeFile`.
 
 ## License
 
