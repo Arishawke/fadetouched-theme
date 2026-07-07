@@ -1,0 +1,21 @@
+{
+  "Name": "Fadetouched",
+  "BackgroundColor": "17, 32, 30",
+  "LightBackgroundColor": "31, 45, 41",
+  "DarkBackgroundColor": "9, 24, 22",
+  "TextColor": "222, 225, 223",
+  "BorderColor": "102, 111, 107",
+  "CheckerColor": "17, 32, 30",
+  "CheckerColor2": "9, 24, 22",
+  "CheckerSize": 15,
+  "LinkColor": "125, 170, 207",
+  "MenuHighlightColor": "62, 73, 69",
+  "MenuHighlightBorderColor": "151, 157, 152",
+  "MenuBorderColor": "102, 111, 107",
+  "MenuCheckBackgroundColor": "62, 73, 69",
+  "MenuFont": "Segoe UI, 9.75pt",
+  "ContextMenuFont": "Segoe UI, 9.75pt",
+  "ContextMenuOpacity": 100,
+  "SeparatorLightColor": "126, 133, 128",
+  "SeparatorDarkColor": "102, 111, 107"
+}

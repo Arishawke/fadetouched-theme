@@ -35,6 +35,10 @@ All notable changes to Fadetouched are documented here. The format follows
   `palette.json` (previously hand-maintained), so colors live in one place.
 
 ### Added
+- ShareX port (`ports/sharex/fadetouched.json`): a verified dark application
+  theme imported via **Application Settings → Theme → Import → From File**.
+  Maps ShareX's theme JSON fields to the shared palette, with stronger menu
+  selection colors for visible hover and checked states.
 - Opencode port: a generated, in-testing terminal UI theme at
   `ports/opencode/fadetouched.json`, following Opencode's public
   `https://opencode.ai/theme.json` schema. Install by copying it to

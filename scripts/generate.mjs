@@ -40,6 +40,7 @@ import * as powershell from "./ports/powershell.mjs";
 import * as tmux from "./ports/tmux.mjs";
 import * as foot from "./ports/foot.mjs";
 import * as mintty from "./ports/mintty.mjs";
+import * as sharex from "./ports/sharex.mjs";
 import * as preview from "./preview.mjs";
 
 const DARK_PORTS = [
@@ -47,7 +48,7 @@ const DARK_PORTS = [
   iterm, alacritty, kitty, helix, neovim, firefox,
   konsole, termux, limine, kdePlasma, notepadpp, zsh, starship, ao3,
   ghostty, wezterm, trilium, qbittorrent, startpage, calibre, codex, opencode, obsidian, feishin,
-  fish, nushell, powershell, tmux, foot, mintty,
+  fish, nushell, powershell, tmux, foot, mintty, sharex,
   swatches,
 ];
 

@@ -174,6 +174,12 @@ set the mode dropdown to **Dark** (or **System** if your OS is dark), and click
 **OK**. Needs calibre 6.0+ (tested on 9.9). It themes dark mode only; in light
 mode calibre keeps its default palette.
 
+### ShareX
+A dark application theme for ShareX. In **Application Settings → Theme → Import →
+From File**, pick [`ports/sharex/fadetouched.json`](ports/sharex/fadetouched.json),
+then select **Fadetouched** from the theme list. Close and reopen Application
+Settings after selecting it so ShareX repaints every settings page.
+
 ### Feishin
 A dark theme for the [Feishin](https://github.com/jeffvli/feishin) music player. In
 **Settings → Advanced → Custom CSS**, enable it, click **Edit**, paste
@@ -213,7 +219,8 @@ install notes below; expect rough edges and please report anything off:
 [`iterm`](ports/iterm/), [`kitty`](ports/kitty/), [`limine`](ports/limine/),
 [`mintty`](ports/mintty/), [`neovim`](ports/neovim/), [`nushell`](ports/nushell/),
 [`opencode`](ports/opencode/), [`termux`](ports/termux/), [`tmux`](ports/tmux/),
-[`vscode`](ports/vscode/), [`web`](ports/web/), [`wezterm`](ports/wezterm/), [`zsh`](ports/zsh/).
+[`vscode`](ports/vscode/), [`web`](ports/web/), [`wezterm`](ports/wezterm/),
+[`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 (`config.json` + `stylesheet.qss`); package them into a `.qbtheme` with Qt's

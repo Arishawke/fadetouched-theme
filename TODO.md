@@ -21,6 +21,7 @@
 - [x] Obsidian
 - [x] PowerShell
 - [x] qBittorrent
+- [x] ShareX
 - [x] Starship
 - [x] Startpage
 - [x] Termux
@@ -43,7 +44,6 @@
 ## Queued
 - [ ] Gemini CLI
 - [ ] OBS (check if Kvantum port covers this)
-- [ ] ShareX
 - [ ] Notesnook
 - [ ] FlorisBoard
 - [ ] Kvaesitso
