@@ -5,6 +5,7 @@
 - [x] AO3
 - [x] base16
 - [x] Calibre
+- [x] Codex
 - [x] Cursor
 - [x] Feishin
 - [x] Firefox
@@ -32,7 +33,6 @@
 - [x] zsh
 
 ## In testing
-- [ ] Codex (OpenAI Codex app theme, generated but not yet visually verified)
 - [ ] fish (unverified - Megan doesn't run fish)
 - [ ] Foot (unverified - generated plain color include)
 - [ ] Mintty (unverified - generated theme file)

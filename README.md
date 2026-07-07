@@ -135,6 +135,14 @@ Open a new session (or run `. $PROFILE`) to apply. Uses PSReadLine (bundled with
 PowerShell 5.1+ and 7+). It only colors typed input, so it sits alongside a prompt
 like Starship.
 
+### Codex
+The Codex Desktop App theme ships as an importable theme string plus a readable
+JSON companion for review. Open Codex, go to **Settings → Appearance → Import**,
+then paste the contents of
+[`ports/codex/fadetouched.codex-theme`](ports/codex/fadetouched.codex-theme).
+It maps Codex's accent, surface, ink, diff, and skill colors directly to
+Fadetouched palette tokens.
+
 ### Notepad++
 Copy [`ports/notepad-plus-plus/Fadetouched.xml`](ports/notepad-plus-plus/Fadetouched.xml)
 to `%AppData%\Notepad++\themes\`, restart Notepad++, then pick **Fadetouched** in
@@ -200,8 +208,8 @@ GPL-3.0 part of the project (it derives from Bibata); see License below.
 ### In testing
 Generated from the same palette and usable, but not yet verified. Some have
 install notes below; expect rough edges and please report anything off:
-[`alacritty`](ports/alacritty/), [`base16`](ports/base16/), [`codex`](ports/codex/),
-[`fish`](ports/fish/), [`foot`](ports/foot/), [`ghostty`](ports/ghostty/), [`helix`](ports/helix/),
+[`alacritty`](ports/alacritty/), [`base16`](ports/base16/), [`fish`](ports/fish/),
+[`foot`](ports/foot/), [`ghostty`](ports/ghostty/), [`helix`](ports/helix/),
 [`iterm`](ports/iterm/), [`kitty`](ports/kitty/), [`limine`](ports/limine/),
 [`mintty`](ports/mintty/), [`neovim`](ports/neovim/), [`nushell`](ports/nushell/),
 [`opencode`](ports/opencode/), [`termux`](ports/termux/), [`tmux`](ports/tmux/),
@@ -212,14 +220,6 @@ The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 `rcc` (`rcc -binary -o fadetouched.qbtheme resources.qrc`, Qt6 for qBittorrent
 4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
 theme** and restart.
-
-The [`codex`](ports/codex/) port is for the Codex Desktop App. It ships the
-`codex-theme-v1:` theme string Codex appears to require, plus a readable JSON
-companion for review. To apply it, open Codex, go to **Settings → Appearance →
-Import**, then paste the contents of
-[`ports/codex/fadetouched.codex-theme`](ports/codex/fadetouched.codex-theme).
-It maps Codex's accent, surface, ink, diff, and skill colors directly to
-Fadetouched palette tokens.
 
 The [`opencode`](ports/opencode/) port is a terminal UI theme for Opencode. Copy
 [`ports/opencode/fadetouched.json`](ports/opencode/fadetouched.json) into
