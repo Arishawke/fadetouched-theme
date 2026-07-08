@@ -211,6 +211,18 @@ spinner for the busy and progress cursors. Prebuilt Windows and Linux (XCursor)
 packs and install steps are in [`ports/cursor/`](ports/cursor/). This is the one
 GPL-3.0 part of the project (it derives from Bibata); see License below.
 
+### Zellij
+A component-based theme for the [Zellij](https://zellij.dev) terminal workspace,
+covering the status bar, tabs, panes/frames, tables, lists, and the multiplayer
+cursor colors. Copy it into Zellij's themes directory:
+```sh
+mkdir -p ~/.config/zellij/themes
+cp ports/zellij/fadetouched.kdl ~/.config/zellij/themes/
+```
+Then set `theme "fadetouched"` in `~/.config/zellij/config.kdl` and open a new
+session. The active tab fills with the accent green; focused pane frames use the
+accent, unfocused a neutral border.
+
 ### In testing
 Generated from the same palette and usable, but not yet verified. Some have
 install notes below; expect rough edges and please report anything off:

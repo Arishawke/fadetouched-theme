@@ -35,6 +35,13 @@ All notable changes to Fadetouched are documented here. The format follows
   `palette.json` (previously hand-maintained), so colors live in one place.
 
 ### Added
+- Zellij port (`ports/zellij/fadetouched.kdl`): a component-based KDL theme
+  following Zellij's advanced theme format (text, ribbons/tabs, table, list,
+  frames, exit codes, and ten multiplayer colors), emitted as RGB triplets with
+  `0` for terminal-default backgrounds. The active tab fills with the accent
+  green; focused pane frames use the accent, unfocused a neutral border. Copy to
+  `~/.config/zellij/themes/` and set `theme "fadetouched"`. Verified in a live
+  Zellij 0.44.3 session.
 - ShareX port (`ports/sharex/fadetouched.json`): a verified dark application
   theme imported via **Application Settings → Theme → Import → From File**.
   Maps ShareX's theme JSON fields to the shared palette, with stronger menu

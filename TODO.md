@@ -31,6 +31,7 @@
 - [x] WezTerm
 - [x] Windows Terminal
 - [x] Zed
+- [x] Zellij
 - [x] zsh
 
 ## In testing
