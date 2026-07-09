@@ -115,6 +115,14 @@ anything it leaves out (font included), so re-pick your font on it if needed.
 Konsole has no custom selection color: it derives the selection highlight from
 the scheme automatically.
 
+### WezTerm
+```sh
+mkdir -p ~/.config/wezterm/colors
+cp ports/wezterm/fadetouched.toml ~/.config/wezterm/colors/
+```
+Then set `color_scheme = "Fadetouched"` in your `wezterm.lua`. WezTerm picks up
+TOML schemes from that colors directory automatically.
+
 ### Starship
 A two-line powerline prompt. Copy the config to Starship's default path:
 ```sh
@@ -231,7 +239,7 @@ install notes below; expect rough edges and please report anything off:
 [`iterm`](ports/iterm/), [`kitty`](ports/kitty/), [`limine`](ports/limine/),
 [`mintty`](ports/mintty/), [`neovim`](ports/neovim/), [`nushell`](ports/nushell/),
 [`opencode`](ports/opencode/), [`termux`](ports/termux/), [`tmux`](ports/tmux/),
-[`vscode`](ports/vscode/), [`web`](ports/web/), [`wezterm`](ports/wezterm/),
+[`vscode`](ports/vscode/), [`web`](ports/web/),
 [`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
