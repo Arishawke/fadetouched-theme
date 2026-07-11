@@ -1,8 +1,14 @@
-import { alpha } from "../lib/color.mjs";
+import { hexToRgb, rgbToHex } from "../lib/color.mjs";
 
-export const label = "Opencode";
+export const label = "OpenCode";
 
 const tone = (name) => ({ dark: name, light: name });
+const DIFF_TINT = 0.1;
+const tint = (base, overlay, amount) => {
+  const baseRgb = hexToRgb(base);
+  const overlayRgb = hexToRgb(overlay);
+  return rgbToHex(baseRgb.map((channel, index) => channel + (overlayRgb[index] - channel) * amount));
+};
 
 export default function render(ctx) {
   const { meta, n, accent, sem, syn } = ctx;
@@ -23,15 +29,14 @@ export default function render(ctx) {
     ftTextSubtle: sem["text-subtle"],
     ftBase: sem.bg,
     ftPanel: sem["bg-dim"],
-    ftElement: n.n0,
-    ftSurface: sem.surface,
+    ftElement: sem.surface,
     ftBorder: sem.border,
     ftBorderActive: sem["border-strong"],
     ftBorderSubtle: n.n4,
-    ftDiffAddedBg: alpha(sem.success, 50),
-    ftDiffRemovedBg: alpha(sem.error, 50),
-    ftDiffAddedLineBg: alpha(sem.success, 25),
-    ftDiffRemovedLineBg: alpha(sem.error, 25),
+    ftDiffAddedBg: tint(sem.bg, sem.success, DIFF_TINT),
+    ftDiffRemovedBg: tint(sem.bg, sem.error, DIFF_TINT),
+    ftDiffAddedLineBg: tint(sem["bg-dim"], sem.success, DIFF_TINT),
+    ftDiffRemovedLineBg: tint(sem["bg-dim"], sem.error, DIFF_TINT),
   };
 
   const theme = {
@@ -59,7 +64,7 @@ export default function render(ctx) {
     diffAddedBg: tone("ftDiffAddedBg"),
     diffRemovedBg: tone("ftDiffRemovedBg"),
     diffContextBg: tone("ftPanel"),
-    diffLineNumber: tone("ftBorderActive"),
+    diffLineNumber: tone("ftTextSubtle"),
     diffAddedLineNumberBg: tone("ftDiffAddedLineBg"),
     diffRemovedLineNumberBg: tone("ftDiffRemovedLineBg"),
     markdownText: tone("ftText"),

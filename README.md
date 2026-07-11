@@ -151,6 +151,17 @@ then paste the contents of
 It maps Codex's accent, surface, ink, diff, and skill colors directly to
 Fadetouched palette tokens.
 
+### OpenCode
+A dark terminal UI theme for OpenCode. Copy the generated theme into OpenCode's
+user theme directory:
+```sh
+mkdir -p ~/.config/opencode/themes
+cp ports/opencode/fadetouched.json ~/.config/opencode/themes/
+```
+Restart OpenCode, then select `fadetouched` with `/theme`, or set
+`"theme": "fadetouched"` in `~/.config/opencode/tui.json`. Needs a truecolor
+terminal. Tested with OpenCode 1.17.18 on Windows.
+
 ### Notepad++
 Copy [`ports/notepad-plus-plus/Fadetouched.xml`](ports/notepad-plus-plus/Fadetouched.xml)
 to `%AppData%\Notepad++\themes\`, restart Notepad++, then pick **Fadetouched** in
@@ -238,26 +249,14 @@ install notes below; expect rough edges and please report anything off:
 [`foot`](ports/foot/), [`ghostty`](ports/ghostty/), [`helix`](ports/helix/),
 [`iterm`](ports/iterm/), [`kitty`](ports/kitty/), [`limine`](ports/limine/),
 [`mintty`](ports/mintty/), [`neovim`](ports/neovim/), [`nushell`](ports/nushell/),
-[`opencode`](ports/opencode/), [`termux`](ports/termux/), [`tmux`](ports/tmux/),
-[`vscode`](ports/vscode/), [`web`](ports/web/),
-[`zsh`](ports/zsh/).
+[`termux`](ports/termux/), [`tmux`](ports/tmux/), [`vscode`](ports/vscode/),
+[`web`](ports/web/), [`zsh`](ports/zsh/).
 
 The [`qbittorrent`](ports/qbittorrent/) port ships the theme sources
 (`config.json` + `stylesheet.qss`); package them into a `.qbtheme` with Qt's
 `rcc` (`rcc -binary -o fadetouched.qbtheme resources.qrc`, Qt6 for qBittorrent
 4.6.0+), then select it under **Tools → Options → Behavior → Use custom UI
 theme** and restart.
-
-The [`opencode`](ports/opencode/) port is a terminal UI theme for Opencode. Copy
-[`ports/opencode/fadetouched.json`](ports/opencode/fadetouched.json) into
-Opencode's user theme directory:
-```sh
-mkdir -p ~/.config/opencode/themes
-cp ports/opencode/fadetouched.json ~/.config/opencode/themes/
-```
-Then select `fadetouched` with `/theme`, or set `"theme": "fadetouched"` in
-`~/.config/opencode/tui.json`. Needs a truecolor terminal. It stays in testing
-until visually verified in Opencode.
 
 The fish and Nushell shell ports color command-line syntax highlighting.
 **fish**: copy [`ports/fish/Fadetouched.theme`](ports/fish/Fadetouched.theme) to

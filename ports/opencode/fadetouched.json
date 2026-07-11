@@ -16,15 +16,14 @@
     "ftTextSubtle": "#979d98",
     "ftBase": "#11201e",
     "ftPanel": "#091816",
-    "ftElement": "#03100f",
-    "ftSurface": "#1f2d29",
+    "ftElement": "#1f2d29",
     "ftBorder": "#3e4945",
     "ftBorderActive": "#505a56",
     "ftBorderSubtle": "#2e3a36",
-    "ftDiffAddedBg": "#96bb9380",
-    "ftDiffRemovedBg": "#c87a7580",
-    "ftDiffAddedLineBg": "#96bb9340",
-    "ftDiffRemovedLineBg": "#c87a7540"
+    "ftDiffAddedBg": "#1e302a",
+    "ftDiffRemovedBg": "#232927",
+    "ftDiffAddedLineBg": "#172823",
+    "ftDiffRemovedLineBg": "#1c2220"
   },
   "theme": {
     "primary": {
@@ -124,8 +123,8 @@
       "light": "ftPanel"
     },
     "diffLineNumber": {
-      "dark": "ftBorderActive",
-      "light": "ftBorderActive"
+      "dark": "ftTextSubtle",
+      "light": "ftTextSubtle"
     },
     "diffAddedLineNumberBg": {
       "dark": "ftDiffAddedLineBg",

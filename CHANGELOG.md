@@ -24,6 +24,9 @@ All notable changes to Fadetouched are documented here. The format follows
 - AO3: flatten the profile/dashboard sidebar and Sort & Filter expander rows,
   make the fandom-index jump-to-top arrow visible, and theme the text-input focus
   ring to the accent.
+- OpenCode: replace unsupported eight-digit alpha colors with opaque diff blends,
+  improve diff text and line-number contrast, and map interactive elements to the
+  authored surface role.
 
 ### Changed
 - Zed: git `modified` now uses the conventional warm yellow (added=green,
@@ -46,10 +49,11 @@ All notable changes to Fadetouched are documented here. The format follows
   theme imported via **Application Settings → Theme → Import → From File**.
   Maps ShareX's theme JSON fields to the shared palette, with stronger menu
   selection colors for visible hover and checked states.
-- Opencode port: a generated, in-testing terminal UI theme at
-  `ports/opencode/fadetouched.json`, following Opencode's public
+- OpenCode port: a generated, verified terminal UI theme at
+  `ports/opencode/fadetouched.json`, following OpenCode's public
   `https://opencode.ai/theme.json` schema. Install by copying it to
-  `~/.config/opencode/themes/` and selecting `fadetouched` with `/theme`.
+  `~/.config/opencode/themes/` and selecting `fadetouched` with `/theme`. Verified
+  in OpenCode 1.17.18 on Windows.
 - tmux, Foot, and Mintty ports: lightweight, unverified config snippets generated
   from `palette.json`. tmux styles the status/message/pane UI, Foot emits a
   `[colors]` include with bare hex colors, and Mintty emits a theme file with
