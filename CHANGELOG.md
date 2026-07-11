@@ -29,6 +29,8 @@ All notable changes to Fadetouched are documented here. The format follows
   authored surface role.
 
 ### Changed
+- README: add the project website near the title and group verified ports into
+  Editors, Terminals, Shell, Apps, Desktop, and Web categories to match the site.
 - Zed: git `modified` now uses the conventional warm yellow (added=green,
   modified=yellow, deleted=red), matching other Zed themes (One Dark, Gruvbox,
   Ayu), instead of blue. Applies to both the status color and the git gutter.
