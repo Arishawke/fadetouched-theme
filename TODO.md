@@ -19,6 +19,7 @@
 - [x] Neovim
 - [x] Notepad++
 - [x] Obsidian
+- [x] OBS Studio
 - [x] OpenCode
 - [x] PowerShell
 - [x] qBittorrent
@@ -44,7 +45,6 @@
 
 ## Queued
 - [ ] Gemini CLI
-- [ ] OBS (check if Kvantum port covers this)
 - [ ] Notesnook
 - [ ] FlorisBoard
 - [ ] Kvaesitso

@@ -40,6 +40,11 @@ All notable changes to Fadetouched are documented here. The format follows
   `palette.json` (previously hand-maintained), so colors live in one place.
 
 ### Added
+- OBS Studio port (`ports/obs/Fadetouched.ovt`): a generated dark variant that
+  extends OBS's maintained Yami base theme. Remaps Yami's full color families,
+  semantic controls, Qt palette, and volume meters while keeping light text
+  readable on selected and active fills. Requires OBS Studio 30.2 or later;
+  verified in OBS Studio 32.1.2 on Windows.
 - Zellij port (`ports/zellij/fadetouched.kdl`): a component-based KDL theme
   following Zellij's advanced theme format (text, ribbons/tabs, table, list,
   frames, exit codes, and ten multiplayer colors), emitted as RGB triplets with

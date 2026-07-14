@@ -198,6 +198,16 @@ Restart OpenCode, then select `fadetouched` with `/theme`, or set
 `"theme": "fadetouched"` in `~/.config/opencode/tui.json`. Needs a truecolor
 terminal. Tested with OpenCode 1.17.18 on Windows.
 
+#### OBS Studio
+A dark color variant for OBS Studio 30.2 or later, built on the maintained Yami
+base theme. Copy [`ports/obs/Fadetouched.ovt`](ports/obs/Fadetouched.ovt) into
+OBS's user theme directory: `%APPDATA%\obs-studio\themes\` on Windows,
+`~/Library/Application Support/obs-studio/themes/` on macOS, or
+`~/.config/obs-studio/themes/` on Linux (`~/.var/app/com.obsproject.Studio/config/obs-studio/themes/`
+for Flatpak). Restart OBS, then under **Settings → Appearance** select **Yami**
+as the Theme and **Fadetouched** as the Style. Verified with OBS Studio 32.1.2
+on Windows.
+
 #### ShareX
 A dark application theme for ShareX. In **Application Settings → Theme → Import →
 From File**, pick [`ports/sharex/fadetouched.json`](ports/sharex/fadetouched.json),

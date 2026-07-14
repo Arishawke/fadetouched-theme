@@ -1,0 +1,157 @@
+@OBSThemeMeta {
+    name: 'Fadetouched';
+    id: 'com.arishawke.Fadetouched';
+    extends: 'com.obsproject.Yami';
+    author: 'Arishawke';
+    dark: 'true';
+}
+
+@OBSThemeVars {
+    --blue1: #96bb93;
+    --blue2: #96bb93;
+    --blue3: #415848;
+    --blue4: #415848;
+    --blue5: #354a3e;
+    --blue6: #293c33;
+    --red1: #c87a75;
+    --red2: #c87a75;
+    --red3: #c87a75;
+    --red4: #53403d;
+    --red5: #423835;
+    --red6: #32302e;
+    --pink1: #dbb5c1;
+    --pink2: #dbb5c1;
+    --pink3: #dbb5c1;
+    --pink4: #5a5659;
+    --pink5: #48484a;
+    --pink6: #353b3b;
+    --teal1: #81b8a8;
+    --teal2: #81b8a8;
+    --teal3: #81b8a8;
+    --teal4: #395750;
+    --teal5: #2f4943;
+    --teal6: #253b37;
+    --purple1: #af90c3;
+    --purple2: #af90c3;
+    --purple3: #af90c3;
+    --purple4: #4a4859;
+    --purple5: #3c3e4b;
+    --purple6: #2d343c;
+    --green1: #96bb93;
+    --green2: #96bb93;
+    --green3: #96bb93;
+    --green4: #415848;
+    --green5: #354a3e;
+    --green6: #293c33;
+    --yellow1: #d7be86;
+    --yellow2: #d7be86;
+    --yellow3: #d7be86;
+    --yellow4: #585943;
+    --yellow5: #464b3a;
+    --yellow6: #353c31;
+    --grey1: #666f6b;
+    --grey2: #505a56;
+    --grey3: #3e4945;
+    --grey4: #2e3a36;
+    --grey5: #1f2d29;
+    --grey6: #11201e;
+    --grey7: #091816;
+    --grey8: #03100f;
+    --white1: #dee1df;
+    --white2: #b3b7b4;
+    --white3: #979d98;
+    --white4: #7e8580;
+    --white5: #666f6b;
+    --black1: #03100f;
+    --black2: #091816;
+    --black3: #11201e;
+    --black4: #2e3a36;
+    --black5: #505a56;
+    --ft_accent: #96bb93;
+    --bg_window: #091816;
+    --bg_base: #11201e;
+    --bg_preview: #03100f;
+    --primary: #415848;
+    --primary_light: #4a6350;
+    --primary_lighter: #96bb93;
+    --primary_dark: #354a3e;
+    --primary_darker: #293c33;
+    --warning: #d7be86;
+    --danger: #c87a75;
+    --text: #dee1df;
+    --text_light: #dee1df;
+    --text_muted: #b3b7b4;
+    --text_disabled: #666f6b;
+    --text_inactive: #979d98;
+    --highlight_color: #96bb93;
+    --scrollbar_bg: #091816;
+    --scrollbar_handle: #1f2d29;
+    --scrollbar_hover: #2e3a36;
+    --scrollbar_down: #3e4945;
+    --scrollbar_border: #3e4945;
+    --border_color: #3e4945;
+    --input_bg: #1f2d29;
+    --input_bg_hover: #2e3a36;
+    --input_bg_focus: #091816;
+    --list_item_bg_selected: #415848;
+    --list_item_bg_hover: #4a6350;
+    --input_border: #505a56;
+    --input_border_hover: #666f6b;
+    --input_border_focus: #96bb93;
+    --button_bg: #1f2d29;
+    --button_bg_hover: #2e3a36;
+    --button_bg_down: #091816;
+    --button_bg_disabled: #11201e;
+    --button_border: #1f2d29;
+    --button_border_hover: #505a56;
+    --button_border_focus: #96bb93;
+    --tab_bg: #091816;
+    --tab_bg_hover: #2e3a36;
+    --tab_bg_down: #415848;
+    --tab_bg_disabled: #091816;
+    --tab_border: #3e4945;
+    --tab_border_hover: #505a56;
+    --tab_border_focus: #96bb93;
+    --tab_border_selected: #96bb93;
+    --separator_hover: #b3b7b4;
+    --palette_window: #091816;
+    --palette_windowText: #dee1df;
+    --palette_base: #11201e;
+    --palette_alternateBase: #1f2d29;
+    --palette_light: #3e4945;
+    --palette_mid: #091816;
+    --palette_dark: #03100f;
+    --palette_shadow: #03100f;
+    --palette_highlight: #415848;
+    --palette_highlightedText: #dee1df;
+    --palette_text: #dee1df;
+    --palette_brightText: #dee1df;
+    --palette_link: #7daacf;
+    --palette_linkVisited: #af90c3;
+    --palette_button: #1f2d29;
+    --palette_buttonText: #dee1df;
+    --palette_text_active: #dee1df;
+    --palette_text_disabled: #666f6b;
+    --palette_text_inactive: #979d98;
+    --palette_brightText_disabled: #666f6b;
+}
+
+.text-bright {
+    color: var(--ft_accent);
+}
+
+.btn-monitor.checked:hover {
+    background: var(--green4);
+}
+
+VolumeMeter {
+    qproperty-backgroundNominalColor: var(--green5);
+    qproperty-backgroundWarningColor: var(--yellow5);
+    qproperty-backgroundErrorColor: var(--red5);
+    qproperty-foregroundNominalColor: var(--green2);
+    qproperty-foregroundWarningColor: var(--yellow2);
+    qproperty-foregroundErrorColor: var(--red2);
+    qproperty-magnitudeColor: var(--black1);
+    qproperty-majorTickColor: var(--text);
+    qproperty-minorTickColor: var(--grey1);
+}
