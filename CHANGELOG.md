@@ -29,6 +29,9 @@ All notable changes to Fadetouched are documented here. The format follows
   authored surface role.
 
 ### Changed
+- README: replace the technical palette reference and long port implementation
+  notes with a concise, user-facing port directory. Add screenshot-backed install
+  guides for Zed, OpenCode, Obsidian, Feishin, and ShareX.
 - README: add the project website near the title and group verified ports into
   Editors, Terminals, Shell, Apps, Desktop, and Web categories to match the site.
 - Zed: git `modified` now uses the conventional warm yellow (added=green,
@@ -36,10 +39,18 @@ All notable changes to Fadetouched are documented here. The format follows
   Ayu), instead of blue. Applies to both the status color and the git gutter.
 - Deepened the base to `#11201e` and muted every accent ~20% in OKLCH for a
   darker, earthier feel. Regenerates every port.
-- Swatch images and the README palette tables are now generated from
-  `palette.json` (previously hand-maintained), so colors live in one place.
+- Swatch images are generated from `palette.json`, so colors live in one place.
 
 ### Added
+- Pi port (`ports/pi/fadetouched.json`): the complete 51-token theme already
+  used by the dotfiles setup, now generated from the shared palette.
+- Gemini CLI and Notesnook ports: importable JSON themes covering their current
+  custom-theme formats.
+- btop port: a complete 48-role theme with interface colors, meter gradients,
+  and process pause and follow states.
+- Sublime Text port: a native color scheme covering documented editor globals
+  and broad syntax scopes.
+- Yazi flavor: a Yazi 26.5.6 interface theme and matching TextMate syntax theme.
 - OBS Studio port (`ports/obs/Fadetouched.ovt`): a generated dark variant that
   extends OBS's maintained Yami base theme. Remaps Yami's full color families,
   semantic controls, Qt palette, and volume meters while keeping light text

@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { buildContext, ROOT } from "./lib/palette.mjs";
-import { injectReadmeTables } from "./readme.mjs";
 
 import * as swatches from "./swatches.mjs";
 import * as zed from "./ports/zed.mjs";
@@ -43,6 +42,12 @@ import * as mintty from "./ports/mintty.mjs";
 import * as sharex from "./ports/sharex.mjs";
 import * as zellij from "./ports/zellij.mjs";
 import * as obs from "./ports/obs.mjs";
+import * as pi from "./ports/pi.mjs";
+import * as geminiCli from "./ports/gemini-cli.mjs";
+import * as notesnook from "./ports/notesnook.mjs";
+import * as btop from "./ports/btop.mjs";
+import * as sublimeText from "./ports/sublime-text.mjs";
+import * as yazi from "./ports/yazi.mjs";
 import * as preview from "./preview.mjs";
 
 const DARK_PORTS = [
@@ -51,6 +56,7 @@ const DARK_PORTS = [
   konsole, termux, limine, kdePlasma, notepadpp, zsh, starship, ao3,
   ghostty, wezterm, trilium, qbittorrent, startpage, calibre, codex, opencode, obsidian, feishin,
   fish, nushell, powershell, tmux, foot, mintty, sharex, zellij, obs,
+  pi, geminiCli, notesnook, btop, sublimeText, yazi,
   swatches,
 ];
 
@@ -70,10 +76,5 @@ for (const port of DARK_PORTS) {
 }
 for (const output of web.default(dark)) write(web.label, output);
 write(preview.label, preview.default(dark));
-
-const readmePath = join(ROOT, "README.md");
-writeFileSync(readmePath, injectReadmeTables(dark, readFileSync(readmePath, "utf8")));
-fileCount += 1;
-console.log(`  ${"README".padEnd(18)} README.md`);
 
 console.log(`\nGenerated ${fileCount} files from palette.json.`);

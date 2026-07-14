@@ -1,0 +1,36 @@
+{
+  "name": "Fadetouched",
+  "type": "custom",
+  "background": {
+    "primary": "#11201e",
+    "diff": {
+      "added": "#21332c",
+      "removed": "#272b28"
+    }
+  },
+  "text": {
+    "primary": "#dee1df",
+    "secondary": "#b3b7b4",
+    "link": "#7daacf",
+    "accent": "#96bb93",
+    "response": "#dee1df"
+  },
+  "border": {
+    "default": "#3e4945",
+    "focused": "#96bb93"
+  },
+  "status": {
+    "success": "#96bb93",
+    "warning": "#d7be86",
+    "error": "#c87a75"
+  },
+  "ui": {
+    "comment": "#666f6b",
+    "symbol": "#99c9c9",
+    "gradient": [
+      "#96bb93",
+      "#81b8a8",
+      "#7daacf"
+    ]
+  }
+}

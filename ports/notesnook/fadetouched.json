@@ -1,0 +1,99 @@
+{
+  "name": "Fadetouched",
+  "id": "fadetouched",
+  "version": 1,
+  "compatibilityVersion": 1,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arishawke",
+      "url": "https://github.com/Arishawke"
+    }
+  ],
+  "homepage": "https://fadetouched.arishawke.com/",
+  "description": "Fadetouched for Notesnook",
+  "colorScheme": "dark",
+  "scopes": {
+    "base": {
+      "primary": {
+        "accent": "#96bb93",
+        "accentForeground": "#11201e",
+        "paragraph": "#dee1df",
+        "background": "#11201e",
+        "border": "#3e4945",
+        "heading": "#dee1df",
+        "icon": "#b3b7b4",
+        "separator": "#3e4945",
+        "placeholder": "#b3b7b4",
+        "hover": "#2e3a36",
+        "backdrop": "#03100fcc"
+      },
+      "secondary": {
+        "accent": "#96bb93",
+        "accentForeground": "#11201e",
+        "paragraph": "#b3b7b4",
+        "background": "#091816",
+        "border": "#3e4945",
+        "heading": "#dee1df",
+        "icon": "#979d98",
+        "separator": "#3e4945",
+        "placeholder": "#b3b7b4",
+        "hover": "#2e3a36",
+        "backdrop": "#03100fcc"
+      },
+      "disabled": {
+        "accent": "#7e8580",
+        "accentForeground": "#11201e",
+        "paragraph": "#7e8580",
+        "background": "#11201e",
+        "border": "#2e3a36",
+        "heading": "#7e8580",
+        "icon": "#7e8580",
+        "separator": "#2e3a36",
+        "placeholder": "#7e8580",
+        "hover": "#1f2d29",
+        "backdrop": "#03100fcc"
+      },
+      "selected": {
+        "accent": "#96bb93",
+        "accentForeground": "#11201e",
+        "paragraph": "#dee1df",
+        "background": "#3e4945",
+        "border": "#96bb93",
+        "heading": "#dee1df",
+        "icon": "#96bb93",
+        "separator": "#3e4945",
+        "placeholder": "#b3b7b4",
+        "hover": "#2e3a36",
+        "backdrop": "#03100fcc"
+      },
+      "error": {
+        "accent": "#c87a75",
+        "accentForeground": "#11201e",
+        "paragraph": "#c87a75",
+        "background": "#232927",
+        "border": "#c87a75",
+        "heading": "#c87a75",
+        "icon": "#c87a75",
+        "separator": "#3e4945",
+        "placeholder": "#b3b7b4",
+        "hover": "#2e3a36",
+        "backdrop": "#03100fcc"
+      },
+      "success": {
+        "accent": "#96bb93",
+        "accentForeground": "#11201e",
+        "paragraph": "#96bb93",
+        "background": "#21332c",
+        "border": "#96bb93",
+        "heading": "#96bb93",
+        "icon": "#96bb93",
+        "separator": "#3e4945",
+        "placeholder": "#b3b7b4",
+        "hover": "#2e3a36",
+        "backdrop": "#03100fcc"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/streetwriters/notesnook-themes/main/schemas/v1.schema.json"
+}

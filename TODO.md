@@ -21,6 +21,7 @@
 - [x] Obsidian
 - [x] OBS Studio
 - [x] OpenCode
+- [x] Pi
 - [x] PowerShell
 - [x] qBittorrent
 - [x] ShareX
@@ -37,17 +38,19 @@
 - [x] zsh
 
 ## In testing
+- [ ] btop (unverified - btop is not installed on this machine)
 - [ ] fish (unverified - Megan doesn't run fish)
 - [ ] Foot (unverified - generated plain color include)
+- [ ] Gemini CLI (unverified - Gemini CLI is not installed on this machine)
 - [ ] Mintty (unverified - generated theme file)
+- [ ] Notesnook (unverified - not imported into the app yet)
 - [ ] nushell (unverified - no nushell on this machine; `.nu` file not validated)
+- [ ] Sublime Text (unverified - Sublime Text is not installed on this machine)
 - [ ] tmux (unverified - generated sourceable status snippet)
+- [ ] Yazi (unverified - generated for Yazi 26.5.6; Yazi is not installed here)
 
 ## Queued
-- [ ] Gemini CLI
-- [ ] Notesnook
 - [ ] FlorisBoard
 - [ ] Kvaesitso
 - [ ] Zed icons
 - [ ] bash (`LS_COLORS` port, shell-agnostic)
-- [ ] Pi (CLI coding agent theme)
