@@ -65,7 +65,7 @@ short installation guide too.
 ### Desktop
 
 - [Cursor](ports/cursor/)
-- [KDE Plasma](ports/kde-plasma/)
+- [KDE Plasma and Kvantum](ports/kde-plasma/README.md)
 - [Limine](ports/limine/)
 
 ### Web
@@ -85,7 +85,7 @@ These ports are usable but still need more hands-on testing:
 [btop](ports/btop/), [fish](ports/fish/), [Foot](ports/foot/),
 [Gemini CLI](ports/gemini-cli/), [Mintty](ports/mintty/),
 [Notesnook](ports/notesnook/), [Nushell](ports/nushell/),
-[Sublime Text](ports/sublime-text/), [tmux](ports/tmux/), and
+[KDE Plasma and Kvantum](ports/kde-plasma/README.md), [Sublime Text](ports/sublime-text/), [tmux](ports/tmux/), and
 [Yazi](ports/yazi/fadetouched.yazi/).
 
 Please [open an issue](https://github.com/Arishawke/fadetouched-theme/issues) if

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, writeFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { buildContext, ROOT } from "./lib/palette.mjs";
 
@@ -19,6 +19,7 @@ import * as konsole from "./ports/konsole.mjs";
 import * as termux from "./ports/termux.mjs";
 import * as limine from "./ports/limine.mjs";
 import * as kdePlasma from "./ports/kde-plasma.mjs";
+import * as kvantum from "./ports/kvantum.mjs";
 import * as notepadpp from "./ports/notepad-plus-plus.mjs";
 import * as zsh from "./ports/zsh.mjs";
 import * as starship from "./ports/starship.mjs";
@@ -53,7 +54,7 @@ import * as preview from "./preview.mjs";
 const DARK_PORTS = [
   zed, vscode, base16, windowsTerminal,
   iterm, alacritty, kitty, helix, neovim, firefox,
-  konsole, termux, limine, kdePlasma, notepadpp, zsh, starship, ao3,
+  konsole, termux, limine, kdePlasma, kvantum, notepadpp, zsh, starship, ao3,
   ghostty, wezterm, trilium, qbittorrent, startpage, calibre, codex, opencode, obsidian, feishin,
   fish, nushell, powershell, tmux, foot, mintty, sharex, zellij, obs,
   pi, geminiCli, notesnook, btop, sublimeText, yazi,
@@ -63,10 +64,11 @@ const DARK_PORTS = [
 const dark = buildContext();
 
 let fileCount = 0;
-const write = (label, { path, content }) => {
+const write = (label, { path, content, source }) => {
   const abs = join(ROOT, path);
   mkdirSync(dirname(abs), { recursive: true });
-  writeFileSync(abs, content);
+  if (source) copyFileSync(join(ROOT, source), abs);
+  else writeFileSync(abs, content);
   fileCount += 1;
   console.log(`  ${label.padEnd(18)} ${path}`);
 };

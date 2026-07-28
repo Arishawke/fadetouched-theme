@@ -1,0 +1,8 @@
+{
+  "KPlugin": {
+    "Id": "Fadetouched",
+    "License": "MIT",
+    "Name": "Fadetouched Aurora"
+  },
+  "X-KDE-PlasmaImageWallpaper-AccentColor": "#96bb93"
+}

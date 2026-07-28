@@ -1,0 +1,19 @@
+{
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "Arishawke"
+      }
+    ],
+    "Category": "",
+    "Description": "The complete Fadetouched desktop appearance",
+    "Id": "com.arishawke.fadetouched",
+    "License": "MIT",
+    "Name": "Fadetouched",
+    "Version": "1.1.0",
+    "Website": "https://github.com/Arishawke/fadetouched-theme"
+  },
+  "Keywords": "Desktop;Workspace;Appearance;Dark;Glass;",
+  "X-Plasma-APIVersion": "2"
+}

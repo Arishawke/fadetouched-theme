@@ -1,0 +1,17 @@
+[Settings]
+FallbackTheme=default
+
+[Wallpaper]
+defaultWallpaperTheme=Fadetouched
+defaultFileSuffix=.png
+defaultWidth=2560
+defaultHeight=1440
+
+[ContrastEffect]
+enabled=true
+contrast=0.28
+intensity=1.35
+saturation=1.1
+
+[BlurBehindEffect]
+enabled=true

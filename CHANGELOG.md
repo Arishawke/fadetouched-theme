@@ -42,6 +42,7 @@ All notable changes to Fadetouched are documented here. The format follows
 - Swatch images are generated from `palette.json`, so colors live in one place.
 
 ### Added
+- KDE Plasma 6 cohesive suite and Kvantum port: adds an atmospheric Plasma Style with opaque and translucent shell assets, a Plasma Global Theme, Aurorae v2 window decoration, packaged wallpaper, complete Kvantum QWidget theme, user installer, and shared palette-derived color scheme.
 - Pi port (`ports/pi/fadetouched.json`): the complete 51-token theme already
   used by the dotfiles setup, now generated from the shared palette.
 - Gemini CLI and Notesnook ports: importable JSON themes covering their current

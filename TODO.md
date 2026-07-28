@@ -12,7 +12,7 @@
 - [x] Ghostty
 - [x] Helix
 - [x] iTerm
-- [x] KDE Plasma (Kvantum)
+- [x] KDE Plasma color scheme
 - [x] Kitty
 - [x] Konsole
 - [x] Limine
@@ -38,6 +38,7 @@
 - [x] zsh
 
 ## In testing
+- [ ] KDE Plasma cohesive suite and Kvantum (generated for Plasma 6.6; awaiting CachyOS application testing)
 - [ ] btop (unverified - btop is not installed on this machine)
 - [ ] fish (unverified - Megan doesn't run fish)
 - [ ] Foot (unverified - generated plain color include)

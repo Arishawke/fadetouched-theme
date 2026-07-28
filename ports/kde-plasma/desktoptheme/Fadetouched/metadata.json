@@ -1,0 +1,18 @@
+{
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "Arishawke"
+      }
+    ],
+    "Category": "",
+    "Description": "Atmospheric glass surfaces in the Fadetouched palette",
+    "EnabledByDefault": false,
+    "Id": "Fadetouched",
+    "License": "MIT",
+    "Name": "Fadetouched",
+    "Version": "1.1.0",
+    "Website": "https://github.com/Arishawke/fadetouched-theme"
+  },
+  "X-Plasma-API": "5.0"
+}
