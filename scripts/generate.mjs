@@ -49,6 +49,10 @@ import * as notesnook from "./ports/notesnook.mjs";
 import * as btop from "./ports/btop.mjs";
 import * as sublimeText from "./ports/sublime-text.mjs";
 import * as yazi from "./ports/yazi.mjs";
+import * as bash from "./ports/bash.mjs";
+import * as bat from "./ports/bat.mjs";
+import * as rio from "./ports/rio.mjs";
+import * as cava from "./ports/cava.mjs";
 import * as preview from "./preview.mjs";
 
 const DARK_PORTS = [
@@ -57,7 +61,7 @@ const DARK_PORTS = [
   konsole, termux, limine, kdePlasma, kvantum, notepadpp, zsh, starship, ao3,
   ghostty, wezterm, trilium, qbittorrent, startpage, calibre, codex, opencode, obsidian, feishin,
   fish, nushell, powershell, tmux, foot, mintty, sharex, zellij, obs,
-  pi, geminiCli, notesnook, btop, sublimeText, yazi,
+  pi, geminiCli, notesnook, btop, sublimeText, yazi, bash, bat, rio, cava,
   swatches,
 ];
 

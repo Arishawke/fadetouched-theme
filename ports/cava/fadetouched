@@ -1,0 +1,11 @@
+# Fadetouched. Generated from palette.json. Do not edit by hand.
+[color]
+background = '#11201e'
+foreground = '#96bb93'
+gradient = 1
+gradient_color_1 = '#7daacf'
+gradient_color_2 = '#81b8a8'
+gradient_color_3 = '#96bb93'
+gradient_color_4 = '#d7be86'
+gradient_color_5 = '#d7a176'
+gradient_color_6 = '#c87a75'

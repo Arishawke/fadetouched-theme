@@ -45,6 +45,8 @@ short installation guide too.
 
 ### Command line
 
+- [bash](ports/bash/README.md)
+- [bat](ports/bat/README.md)
 - [OpenCode](ports/opencode/README.md)
 - [Pi](ports/pi/)
 - [PowerShell](ports/powershell/)
@@ -82,10 +84,10 @@ short installation guide too.
 ### In testing
 
 These ports are usable but still need more hands-on testing:
-[btop](ports/btop/), [fish](ports/fish/), [Foot](ports/foot/),
+[btop](ports/btop/), [Cava](ports/cava/README.md), [fish](ports/fish/), [Foot](ports/foot/),
 [Gemini CLI](ports/gemini-cli/), [Mintty](ports/mintty/),
 [Notesnook](ports/notesnook/), [Nushell](ports/nushell/),
-[KDE Plasma and Kvantum](ports/kde-plasma/README.md), [Sublime Text](ports/sublime-text/), [tmux](ports/tmux/), and
+[KDE Plasma and Kvantum](ports/kde-plasma/README.md), [Rio](ports/rio/README.md), [Sublime Text](ports/sublime-text/), [tmux](ports/tmux/), and
 [Yazi](ports/yazi/fadetouched.yazi/).
 
 Please [open an issue](https://github.com/Arishawke/fadetouched-theme/issues) if
