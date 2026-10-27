@@ -9,8 +9,10 @@
 - [x] Calibre
 - [x] Codex
 - [x] Cursor
+- [x] eza
 - [x] Feishin
 - [x] Firefox
+- [x] fzf
 - [x] Ghostty
 - [x] Helix
 - [x] iTerm
@@ -52,6 +54,7 @@
 - [ ] Rio (unverified - Rio is not installed on this machine)
 - [ ] Sublime Text (unverified - Sublime Text is not installed on this machine)
 - [ ] tmux (unverified - generated sourceable status snippet)
+- [ ] Warp (unverified - Warp is not installed on this machine)
 - [ ] Yazi (unverified - generated for Yazi 26.5.6; Yazi is not installed here)
 
 ## Queued

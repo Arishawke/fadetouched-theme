@@ -21,8 +21,3 @@ ports/firefox/*.xpi
 
 # palette exploration scratch (throwaway, never committed)
 .preview-scratch/
-
-# dev-only apparatus, kept local (run the checks without publishing them)
-test/
-.github/workflows/
-scripts/contrast.mjs

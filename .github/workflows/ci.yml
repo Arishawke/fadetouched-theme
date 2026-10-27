@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Verify
+        run: npm run check
+
+      - name: Generated files are up to date with palette.json
+        run: |
+          if [[ -n "$(git status --short)" ]]; then
+            git status --short
+            echo "::error::Generated files drift from palette.json. Run 'npm run build' and commit the result."
+            exit 1
+          fi

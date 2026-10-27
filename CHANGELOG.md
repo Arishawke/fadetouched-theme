@@ -29,6 +29,7 @@ All notable changes to Fadetouched are documented here. The format follows
   authored surface role.
 
 ### Changed
+- Repository validation is now tracked and runs in GitHub Actions on Node 24, so a clean checkout can run the generator, contrast gate, and test suite instead of relying on ignored local files.
 - README: replace the technical palette reference and long port implementation
   notes with a concise, user-facing port directory. Add screenshot-backed install
   guides for Zed, OpenCode, Obsidian, Feishin, and ShareX.
@@ -42,6 +43,7 @@ All notable changes to Fadetouched are documented here. The format follows
 - Swatch images are generated from `palette.json`, so colors live in one place.
 
 ### Added
+- fzf, eza, and Warp ports. fzf ships a shell-independent defaults file, eza a native partial `theme.yml` covering files and metadata, and Warp a custom-theme YAML with UI and ANSI colors. fzf and eza were verified with the locally installed applications; Warp follows its current documented format but awaits live testing.
 - bash, bat, Rio, and Cava ports. bash ships a truecolor GNU `dircolors` database verified with Git Bash; bat reuses the generated TextMate syntax theme and was verified with bat 0.26.1; Rio maps its documented terminal and interface color keys; Cava ships a standalone six-color gradient theme that leaves audio settings untouched.
 - KDE Plasma 6 cohesive suite and Kvantum port: adds an atmospheric Plasma Style with opaque and translucent shell assets, a Plasma Global Theme, Aurorae v2 window decoration, packaged wallpaper, complete Kvantum QWidget theme, user installer, and shared palette-derived color scheme.
 - Pi port (`ports/pi/fadetouched.json`): the complete 51-token theme already
